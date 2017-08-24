@@ -923,7 +923,7 @@ body.loaded .gridline {
 	height: 100vh;
 }
 .web-list .introContent {
-	opacity:0;
+	opacity:1;
 }
 .web-list .introContent.active {
 	opacity:1;
