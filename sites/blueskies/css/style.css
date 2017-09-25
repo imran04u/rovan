@@ -1,0 +1,302 @@
+/* ------------------------------------------------------------------------------
+
+Project Name : BlueSkies
+Description  : Main Style Sheet
+Author       : Imran Rovan
+Created On   : 25 Sep 2017
+--------------------------------------------------------------------------------*/
+
+/** Google Fonts **/
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700');
+
+@font-face {
+	font-family: "Carnas Light";
+	src: url("../fonts/Carnas-Light.otf") format("opentype");
+	url('../fonts/Carnas-Light.woff') format('woff');
+	font-weight: light;
+	font-style: normal;
+}
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: #000;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	-ms-overflow-style: scrollbar;
+}
+html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+}
+ol, ul {
+	list-style: none;
+}
+p {
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #4b4b4b;
+}
+.absolute {
+	position: absolute;
+}
+img {
+	display: block;
+	outline: none;
+}
+img, input, textarea, button {
+	border: 0;
+	outline: 0;
+	resize: none;
+}
+a, a:hover, a:focus {
+	text-decoration: none;
+	-moz-transition: all .200s ease-in-out;
+	-webkit-transition: all .200s ease-in-out;
+	transition: all .200s ease-in-out; 
+}
+.clear {
+	clear: both;
+	font-size: 0;
+	height: 0;
+}
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+li.clearfix {
+	display: list-item;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body, p, a, li, span, div {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+/** Theme Css **/
+header {
+	height: 80px;
+	background-color: rgba(255,255,255,0.5);
+	/* display: none; */
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 999;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.logo {
+	float: left;
+}
+.logo img {
+	padding: 15px 0;
+	height: 80px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#menu {
+	float: right;
+}
+#menu li {
+	float: left;
+	margin-left: 10px;
+	padding: 30px 0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#menu li a {
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #000;
+	padding: 8px 15px;
+}
+#menu li:last-child a {
+	background-color: #80c436;
+	border-radius: 30px;
+	color: #fff;
+	font-weight: 500;
+}
+.header-fixed {
+	height: 60px;
+	background-color: rgba(255,255,255,1);
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.23);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.23);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.23);
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.header-fixed .logo img {
+	padding: 10px 0;
+	height: 60px;
+}
+.header-fixed  #menu li {
+	padding: 19px 0;
+}
+
+/*banner*/
+.sub-head {
+	width: 500px !important;
+	font-size: 40px !important;
+	line-height: 40px !important;
+	white-space: normal !important;
+	font-weight: 600;
+	color: #000;
+	display: block !important;
+}
+.sub-desc {
+	width: 500px !important;
+	font-size: 16px !important;
+	line-height: 26px !important;
+	white-space: normal !important;
+	font-weight: 400;
+	color: #333;
+	display: block !important;
+}
+
+.aboutBlk {
+	padding:50px 0; 
+}
+.aboutBlk h5 {
+	color: #0374a6;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.aboutBlk h2 {
+	color: #000;
+	font-family: "Carnas Light";
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 50px;
+	margin-bottom: 10px;
+}
+.aboutBlk p {
+	font-size: 15px;
+	line-height: 25px;
+	margin-bottom: 15px;
+	color: #333;
+	padding-left: 50px;
+}
+.aboutBlk p:first-child {
+	margin-top: 25px;
+}
+.aboutBlk .abtimg {
+	float: right;
+	margin-top: 40px;
+}
+.abtcontent h3 {
+	position: relative;
+	margin-top: -280px;
+	position: relative;
+	z-index: 99;
+	width: 500px;
+	padding:50px 40px;
+	float: left;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 45px;
+	color: #ffffff;
+	background: #0271c0;
+	background: -moz-linear-gradient(left, #0271c0 0%, #1299f9 100%);
+	background: -webkit-linear-gradient(left, #0271c0 0%, #1299f9 100%);
+	background: linear-gradient(to right, #0271c0 0%, #1299f9 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0271c0', endColorstr='#1299f9', GradientType=1);
+}
+.abtcontent h3 span {
+	display: block;
+	font-size: 15px;
+	font-style: italic;
+}
+.abtcontent h3:before {
+	content: '';
+	background: url(../images/quotes.png) no-repeat left top;
+	width: 80px;
+	height: 80px;
+	opacity: 0.2;
+	position: absolute;
+	z-index: -1;
+	top: 20px;
+	left: 20px;
+}
+.serviceBlk {
+	background: #f4f4f4 url(../images/service.jpg) no-repeat right 70px bottom;
+	background-size: contain;
+	padding: 50px 0;
+}
+.serviceList li {
+	width: 40%;
+	float: left;
+	text-align: center; 
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color:#fff;
+	padding: 20px;
+	border-color: #e8e8e8;
+	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,.04);
+	box-shadow: 2px 2px 2px rgba(0,0,0,.04);
+}
+.serviceList li img {
+	display: block;
+	margin: 0 auto 10px;
+	height: 50px;
+}
+.serviceList li h2 {
+	font-size:18px;
+	font-weight:600;
+	color:#000;
+	margin-bottom:10px;
+}
+.serviceList li p {
+	font-size:15px;
+	font-weight:400;
+	color:#666;
+	margin-bottom:0px;
+}
+.serviceban {
+	background: #f4f4f4 url(../images/serviceban.jpg) no-repeat right bottom;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+}
+.serviceban h2 {
+	text-align: center;
+	font-size: 30px;
+	line-height: 40px;
+	color: #fff;
+	font-family: "Carnas Light";
+	padding: 80px 0;
+}
+.serviceban h2 span {
+	color: #b9d057;
+}
