@@ -1,0 +1,299 @@
+
+/** Responsive css code Start **/
+@media all and (max-width:1990px) and (min-width: 1024px) {
+/*	.footer {
+    border-top: 1px solid #ccc;
+       padding: 25px 0 20px 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0px;
+}*/
+	}
+ 
+@media screen and (max-width: 1024px) {
+.banner_sec h1 {
+	font-size: 38px;
+}
+.banner_sec h1 span {
+	font-size: 57px;
+}
+.banner_sec h2 {
+	font-size: 30px;
+}
+.news2 h3 {
+	font-size: 28px;
+}
+.news_sec .owl-nav {
+	right: -65px !important;
+}
+.right-text {
+	padding-left: 4px;
+}
+.left-img {
+	margin-right: 5px;
+}
+.address-section {
+    margin-left:0px;
+}
+.our-clinics h3 {
+    font-size: 20px;
+}
+.form-upload .prepend-icon > input {
+    width: 60% !important;
+}
+.insurance-list li{
+width:auto;
+}
+
+}
+
+/*Responsive 991*/ 
+@media (max-width: 991px) {
+.navbar-collapse {
+	width: 100%;
+}
+.navbar-collapse.in {
+	width: 100%;
+}
+.nav>li {
+	padding: 5px 0;
+}
+.banner_content {
+	left: 47%!important;
+}
+.owl-carousel1 .owl-nav {
+	right: -146px;
+	top: 0px;
+}
+a.offer_img img {
+	width: 50%;
+}
+.footer ul {
+	float: left;
+}
+ul.social {
+	margin: 10px 0 0 0;
+}
+.logo {
+	margin-left: 100px !important;
+	float: right;
+}
+.nav>li {
+	border-bottom: 1px solid #9DCB3B!important;
+}
+}
+
+/*Responsive 768*/ 
+@media screen and (max-width: 768px) {
+.banner_sec h1 {
+	font-size: 35px!important;
+	line-height: 40px
+}
+.banner_sec h1 span {
+	font-size: 50px!important;
+}
+.banner_sec h2 {
+	font-size: 25px!important;
+}
+.ls-v5 .ls-nav-prev, .ls-v5 .ls-nav-next {
+	display: none!important;
+}
+.footer li {
+	padding-left: 0;
+}
+.news_sec .owl-nav {
+	right: -136px !important;
+}
+.ls-v5 .ls-nav-next {
+	right: 5px !important;
+	display: block !important;
+}
+.ls-v5 .ls-nav-prev {
+	left: 5px !important;
+	display: block !important;
+}
+.safari .head-navy {
+	z-index: 9999;
+}
+.safari .main_menu {
+	background: #fff;
+	z-index: 9999;
+}
+.navbar {
+	margin-bottom: 0px !important;
+}
+.navbar {
+	min-height: 10px !important;
+}
+.nav>li:last-child {
+	border-bottom: none !important;
+}
+.main_menu {
+	padding-top: 0px;
+}
+.left-img {
+	margin-right: 14px;
+}
+.right-text {
+	padding-left: 20px;
+}
+.navbar-nav {
+	margin: 0px !important;
+}
+.our-clinics img {
+   width: 100%;
+}
+.about-section img {
+    width: 100%;
+}
+.footer .social {
+       margin-top: 10px;
+}
+.career-section .contact-form .right-form textarea {
+    height: 270px;
+}
+.mission-section {
+    margin-top: 15px;
+}
+.owl-carousel1 .owl-nav {
+  top: -48px;
+}
+.submit-block{display:none;}
+.responsive-submit{display:block;}
+
+}
+
+/*Responsive 767*/ 
+@media screen and (max-width: 767px) {
+	.career-table{border:none;}
+}
+
+/*Responsive 675*/ 
+@media (max-width: 675px) {
+.banner_sec h2 {
+	font-size: 20px!important;
+}
+.news_sec .owl-nav {
+	right: -124px !important;
+}
+
+}
+
+/*Responsive 640*/  
+@media screen and (max-width: 640px) {
+.banner_sec h1 {
+	font-size: 21px!important;
+	line-height: 25px
+}
+.banner_sec h1 span {
+	font-size: 28px!important;
+}
+.banner_sec h2 {
+	font-size: 14px!important;
+}
+.owl-carousel1 .owl-nav {
+	right: -118px!important;
+	top: 0px;
+}
+}
+
+@media (max-width: 575px) {
+.owl-carousel1 .owl-nav {
+	    right: -104px!important;
+    top: -49px;
+}
+}
+
+/*Responsive 480*/ 
+@media screen and (max-width: 480px) {
+.owl-carousel1 .owl-nav {
+    right: -92px!important;
+    top: -48px;
+}
+.logo img {
+	width: 138%;
+}
+.bold-head {
+    font-size: 30px !important;
+    line-height: 40px !important;
+
+}
+.inner-heading {
+    font-size: 25px;
+  
+}
+.insurance-list li {
+   margin: 10px 3px 10px 0px;
+}
+}
+
+/*Responsive 435*/ 
+@media (max-width: 435px) {
+.owl-carousel1 .owl-nav {
+	right: -92px!important;
+	top: 0px;
+}
+.logo img {
+	width: 138%;
+}
+}
+
+/*Responsive 375*/ 
+@media (max-width: 375px) {
+.banner_sec h1 {
+	font-size: 16px!important;
+}
+.banner_sec h1 span {
+	font-size: 20px!important;
+}
+.banner_sec h2 {
+	font-size: 10px!important;
+}
+.banner_content {
+	top: 5%!important;
+}
+.owl-carousel1 .owl-nav {
+	top: -49px;
+    right: -74px!important;
+}
+.footer li a {
+	font-size: 12px;
+}
+.inner-content h2 {
+    font-size: 20px;
+  }
+  .form-upload .prepend-icon > input {
+    width: 50% !important;
+}
+.insurance-list li {
+  width: 100%;
+}
+}
+
+/*Responsive 320*/ 
+@media (max-width: 320px) {
+.owl-carousel1 .owl-nav {
+	    right: -65px!important;
+       top: -49px;
+}
+.navbar-toggle {
+	margin-top: 10px !important;
+}
+.right-text {
+	padding-left: 3px;
+}
+.left-img {
+	margin-right: 3px;
+}
+.form-upload .prepend-icon > input {
+    width: 50% !important;
+}
+.news2 h3 {
+    font-size: 23px;
+}
+}
+
+/*Responsive 360*/ 
+@media screen and (max-width:360px) {
+}
