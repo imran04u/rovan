@@ -429,3 +429,80 @@ footer {
 .social li:last-child a:hover {
 	background:url(../images/social-all.png) no-repeat -143px 0;
 }
+.jobsBlk {
+	background-color: #243141;
+	padding:50px 0;
+	position: relative;
+}
+.jobslist {
+	float: right;
+}
+.jobimg {
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../images/jobs.jpg) no-repeat center top;
+	background-size: cover;
+}
+.jobslist h2 {
+	color: #fff;
+}
+.jobslist ul li {
+	width: 100%;
+	border-bottom: 1px rgba(255,255,255,0.1) solid;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.jobslist ul li span {
+	color: #ccc;
+	float: left;
+	font-size: 13px;
+	padding-right: 20px;
+	padding-left:20px;
+	border-left: 1px #38495f solid;
+	border-right: 1px #16222f solid;
+}
+.jobslist ul li span:first-child {
+	width: 50%;
+	padding-left: 0;
+	border-left: 0;
+	font-size: 15px;
+}
+.jobslist ul li span:nth-child(2) {
+	width: 30%;
+}
+.jobslist ul li span:last-child {
+	width: 20%;
+	padding-right: 0;
+	border-right: 0;
+}
+.jobslist ul li span a {
+	color:#fff;
+	font-weight: 500;
+}
+.jobslist a.morebtn {
+	margin-top: 20px;
+}
+a.morebtn {
+	padding: 8px 30px 8px 20px;
+	border: 1px rgba(255,255,255,0.2) solid;
+	border-radius: 35px;
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 13px;
+	color: #fff;
+	position: relative;
+}
+a.morebtn:after {
+	content: '>';
+	font-size: 13px;
+	color: rgba(255,255,255,0.2);
+	position: absolute;
+	top: 9px;
+	right: 12px;
+}
+a.morebtn:hover {
+	padding-right:40px;
+}
