@@ -7,7 +7,7 @@ Created On   : 25 Sep 2017
 --------------------------------------------------------------------------------*/
 
 /** Google Fonts **/
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700|Playfair+Display');
 
 @font-face {
 	font-family: "Carnas Light";
@@ -29,6 +29,8 @@ body {
 	margin: 0;
 	padding: 0;
 	-ms-overflow-style: scrollbar;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
@@ -112,7 +114,7 @@ header {
 	float: left;
 }
 .logo img {
-	padding: 15px 0;
+	padding: 10px 0;
 	height: 80px;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -299,4 +301,131 @@ header {
 }
 .serviceban h2 span {
 	color: #b9d057;
+}
+.clientBlk {
+	background-color:#fff;
+	padding: 50px 0; 
+}
+.heading {
+	color: #0374a6;
+	font-size: 25px;
+	font-weight: 500;
+	margin-bottom: 15px;
+	font-family: "Carnas Light";
+}
+.clientBlk h2, .clientBlk p {
+	text-align: center;
+}
+.clientBlk p {
+	font-size: 15px;
+	line-height: 20px;
+	color: #333;
+	padding-left: 50px;
+	width: 70%;
+	margin:0 auto;
+}
+.clientBlk ul {
+	list-style: none;
+	margin:25px 0;
+}
+.clientBlk ul li {
+	width: 33%;
+	float: left; 
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.clientBlk ul li:nth-child(3n+3), .clientBlk ul li:last-child {
+	border-right: 0;
+}
+.clientBlk ul li img {
+	padding:10px 5px;
+	width: 100%;
+}
+
+.testiCaro p {
+	color: #333;
+	font-family: "Playfair Display";
+	font-size: 18px;
+	font-style: italic;
+	line-height: 34px;
+	position: relative;
+	padding: 30px 0 15px 0;
+	background: url(../images/star.jpg) no-repeat center 10px;
+	width: 100%;
+}
+.testiCaro p::before {
+	content: "“";
+}
+.testiCaro p::after {
+	content: "”";
+}
+.testiCaro h5 {
+	color: #006aa5;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.testiCaro h5 span {
+	color: #000;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 400;
+	text-transform: capitalize;
+	display: block;
+	padding-top: 5px;
+}
+.testiCaro img {
+	height: 40px;
+	margin: 0 auto 10px;
+	width: auto !important;
+}
+.clientside {
+	padding-right: 30px;
+	border-right:1px #ddd solid;
+}
+.testiside {
+	border-left:1px #ddd solid;
+	margin-left: -1px;
+}
+footer {
+	background: #000f19;
+	padding: 15px 0;
+	color: #fff;
+}
+.copyrights {
+	float: left;
+	font-size: 13px;
+	color:#fff;
+}
+.copyrights a {
+	color:#439eda;
+}
+.social {
+	float: right;
+	margin-top: 5px;
+}
+.social li {
+	float:left;
+	margin-left:15px;
+}
+.social li a {
+	text-indent: -9999px;
+	width: 15px;
+	height: 15px;
+	display: block;
+	-moz-transition: all .0s ease-in-out;
+	-webkit-transition: all 0s ease-in-out;
+	transition: all 0s ease-in-out;
+}
+.social li:first-child a {
+	background:url(../images/social-all.png) no-repeat -42px 0;
+}
+.social li:first-child a:hover {
+	background:url(../images/social-all.png) no-repeat -62px 0;
+}
+.social li:last-child a {
+	background:url(../images/social-all.png) no-repeat -122px 0;
+}
+.social li:last-child a:hover {
+	background:url(../images/social-all.png) no-repeat -143px 0;
 }

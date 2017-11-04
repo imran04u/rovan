@@ -9,8 +9,10 @@
 
 	<!-- Stylesheet -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/layerslider.css" type="text/css">
-	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="css/style.css" >
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" >
+
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -20,7 +22,7 @@
 <body>
 	<div id="page">
 		<!-- Header -->
-		<header>
+		<header class="wow fadeInDown">
 			<a href="#menu" id="burgernav"><span></span><span></span><span></span></a>
 			<div class="container">
 				<div class="logo">
@@ -30,17 +32,18 @@
 				</div>
 				<nav id="menu">
 					<ul>
-						<li class="active"><a href="aboutus.html">About Us</a></li>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="aboutus.html">About Us</a></li>
 						<li><a href="aboutus.html">Services</a></li>
 						<li><a href="clients.html">Clients</a></li>
-						<li><a href="testimonials.html">Testimonials</a></li>
+						<li><a href="testimonials.html">Jobs</a></li>
 						<li><a href="aboutus.html">Contact Us</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<!-- Banner -->
-		<div class="banner-section">
+		<div class="banner-section wow fadeIn">
 			<div id="full-slider-wrapper">
 				<div id="homeslider" style="width:100%;height:800px;">
 					<div class="ls-slide" data-ls="slidedelay:5000;transition2d:5;"> 
@@ -60,8 +63,8 @@
 					<div class="ls-slide" data-ls="slidedelay:5000;transition2d:5;"> 
 						<img src="images/banner/03.jpg" class="ls-bg" alt="Slide background"/> 
 						<div class="container">
-							<h2 class="ls-l sub-head" style="top:300px;right:50px;left:auto;" data-ls="offsetxin:-100; durationin:2500; easingin:easeOutBack; skewxin:0;offsetxout:100; durationout:200;">Choose right people for your organisation</h2>
-							<p class="ls-l sub-desc" style="top:430px;right:50px;left:auto;" data-ls="offsetxin:-100; durationin:2500; easingin:easeOutBack; skewxin:0;offsetxout:100; durationout:200;">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante.</p>
+							<h2 class="ls-l sub-head" style="top:300px;left:150px;" data-ls="offsetxin:-100; durationin:2500; easingin:easeOutBack; skewxin:0;offsetxout:100; durationout:200;">Choose right people for your organisation</h2>
+							<p class="ls-l sub-desc" style="top:430px;left:150px;" data-ls="offsetxin:-100; durationin:2500; easingin:easeOutBack; skewxin:0;offsetxout:100; durationout:200;">Proin imperdiet ut massa sed mollis. In sodales turpis et arcu vulputate placerat. Proin diam augue, gravida non diam vitae, dignissim dapibus erat. In eu rutrum ante.</p>
 						</div>
 					</div>
 					<div class="ls-slide" data-ls="slidedelay:5000;transition2d:5;"> 
@@ -78,53 +81,53 @@
 		<!-- About Us -->
 		<div class="aboutBlk">
 			<div class="container">
-				<div class="col-md-5">
+				<div class="col-md-5 wow fadeInLeft"> 
 					<h5>About BlueSkies</h5>
 					<!-- <h2>We strive to build stories of success</h2> -->
 					<h2>Helping to create engaging, productive and profitable organizations</h2>
 				</div>
-				<div class="col-md-7">
+				<div class="col-md-7 wow fadeInUp">
 					<p>BlueSkies is a recruitment accelerator, helping clients hire better and faster ! Hiring teams place request to hire on BlueSkies and the platform delivers CVs within 2-3 hours. BlueSkies utilizes automation technology for matching CVs, candidate engagement and social data aggregation.</p>
 					<p>Technology along with our global network of talent acquisition specialists deliver high performance recruitment.</p>				
 				</div>
 				<div class="clear"></div>
-				<div class="col-md-8 abtimg"><img src="images/about.jpg" class="img-responsive"></div>
+				<div class="col-md-8 abtimg wow slideInUp"><img src="images/about.jpg" class="img-responsive"></div>
 				<div class="abtcontent">
-					<h3>With our specialists, and experts at your disposal, you will face complex HR issues with confidence
+					<h3 class="wow slideInUp" data-wow-delay="0.2s">With our specialists, and experts at your disposal, you will face complex HR issues with confidence
 						<span>- Reshma Azeez, Founder & Sr. Consultant</span>
 					</h3>
 				</div>
 			</div>
 		</div>
 		<!-- Service banner -->
-		<div class="serviceban">
+		<div class="serviceban wow fadeIn">
 			<div class="container">
-				<h2>Commitment to quality and a client focused approach
+				<h2 class="wow zoomIn">Commitment to quality and a client focused approach
 					<br>are the <span> cornerstones of business</span>
 				</h2>
 			</div>
 		</div>
 		<!-- Services -->
-		<div class="serviceBlk">
+		<div class="serviceBlk wow fadeIn">
 			<div class="container">
 				<div class="col-md-9">
 					<ul class="serviceList">
-						<li>
+						<li class="wow fadeInUp" data-wow-delay="0.3s">
 							<img src="images/service01.png" />
 							<h2>Recruitment</h2>
 							<p>BlueSkies is a recruitment accelerator, helping clients hire better and faster ! Hiring teams place request to hire</p>
 						</li>
-						<li>     
+						<li class="wow fadeInUp" data-wow-delay="0.6s">     
 							<img src="images/service02.png" />
 							<h2>HR Services</h2>
 							<p>BlueSkies is a recruitment accelerator, helping clients hire better and faster ! Hiring teams place request to hire</p>
 						</li>
-						<li>
+						<li class="wow fadeInUp" data-wow-delay="0.9s">
 							<img src="images/service03.png" />
 							<h2>Training</h2>
 							<p>BlueSkies is a recruitment accelerator, helping clients hire better and faster ! Hiring teams place request to hire</p>
 						</li>
-						<li>
+						<li class="wow fadeInUp" data-wow-delay="1.2s">
 							<img src="images/service04.png" />
 							<h2>Partnering</h2>
 							<p>BlueSkies is a recruitment accelerator, helping clients hire better and faster ! Hiring teams place request to hire</p>
@@ -132,28 +135,79 @@
 
 					</div>
 
-				</div></div>
-
+				</div>
 			</div>
-			<!-- jQuery plugins -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-			<script src="js/common.js"></script>
+			<!-- Clients & Testimonial -->
+			<div class="clientBlk wow fadeIn">
+				<div class="container">
+					<div class="col-md-7 clientside wow fadeInLeft">
+						<h2 class="heading">Our Clients</h2>
+						<ul>
+							<li><a href=""><img src="images/clients/01.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/clients/02.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/clients/03.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/clients/04.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/clients/05.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/clients/06.jpg" alt=""></a></li>
+						</ul>
+					</div>
+					<div class="col-md-5 testiside wow fadeInRight">
+						<h2 class="heading">Testimonials</h2>
+						<div class="testiCaro owl-carousel owl-theme">
+							<div class="item">
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
+								<img src="images/clients/rovanlab.png">
+								<h5>Imran Rovan <span>Founder, RovanLab</span></h5>
+							</div>
+							<div class="item">
+								<p>In promotion and of advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product.</p>
+								<img src="images/clients/rovanlab.png">
+								<h5>Afsal Rahiman <span>Founder, AF Grafix</span></h5>
+							</div>
 
-			<!-- LayerSlider Script --> 
-			<script src="js/greensock.js" type="text/javascript"></script> 
-			<script src="js/layerslider.transitions.js" type="text/javascript"></script> 
-			<script src="js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script> 
-			<script type="text/javascript">
-				jQuery("#homeslider").layerSlider({
-					responsive: false,
-					responsiveUnder: 1800,
-					layersContainer: 1800,
-      //hoverPrevNext: false,
-      skinsPath: 'css/skins/'
-  }); 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer class="wow fadeIn">
+			<div class="container">
+				<p class="copyrights">&copy; 2017 BlueSkies HR. Site by <a href="http://rovanlab.in" target="_blank">RovanLab</a> </p>
+				<ul class="social">
+					<li><a href="">facebook</a></li>
+					<li><a href="">linkedin</a></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- jQuery plugins -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/common.js"></script>
 
-</script>
-
-</body>
-</html>
+		<!-- LayerSlider Script --> 
+		<script src="js/plugins.js" type="text/javascript"></script> 
+		<script type="text/javascript">
+			jQuery("#homeslider").layerSlider({
+				responsive: false,
+				responsiveUnder: 1800,
+				layersContainer: 1800,
+				//hoverPrevNext: false,
+				skinsPath: 'css/skins/'
+			}); 
+			$('.testiCaro').owlCarousel({
+				loop:true,
+				margin:0,
+				nav:false,
+				dots:true,
+				items:1,
+				autoplay:true,
+				autoplayTimeout:5000
+			})
+		</script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+	</body>
+	</html>
