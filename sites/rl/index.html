@@ -1,0 +1,480 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>RovanLab :: UI/UX Designer Front End Developer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Preload Style -->
+    <style>
+    #page {
+        overflow:hidden;
+        height: 1px;
+    }
+    #preloader {
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+    #preloader:before {
+        content: '';
+        background:  url(img/logo-line.png) no-repeat center center;
+        background-size: auto 75%;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.1;
+    }
+    /*#preloader:after {
+        content: '';
+        background:  url(img/logo-full.png) no-repeat bottom 30px right 30px;
+        background-size: auto 40px;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 1;
+        }*/
+        .precontent {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .precontent h2 {
+            font-size: 100px;
+            color: #4c4c4c;
+            line-height: 100px;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+        }
+        .precontent h3 {
+            font-size: 18px;
+            color: #1262b3;
+            line-height: 35px;
+            font-weight: 400;
+            margin: 0;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .percentageBar, .percentageScale {
+            margin-left: 6.5%;
+            width: 2px;
+            height: 80vh;
+            margin-top: 10vh;
+            background-color: #eee;
+            position: relative;
+        }
+        .percentageBar .textanim {
+            position: absolute;
+            bottom:0;
+            left: 5px;
+            font-size: 12px;
+            line-height: 12px;
+            color: #333;
+            width: 100px;
+            text-transform: uppercase;
+        }
+        .percentageLoads {
+           margin-left: 6.5%;
+           width: 2px;
+           margin-top: 10vh;
+           background-color: #333;
+           width: 2px;
+           height: 0vh;
+           position: absolute;
+           bottom:0;
+           left: 0;
+           -webkit-transition: all 0.5s ease;
+           -moz-transition: all 0.5s ease;
+           -o-transition: all 0.5s ease;
+           transition: all 0.5s ease;
+       }
+       .percentageScale {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        margin-top: 0vh;
+        background-color: #333;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -o-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .percentageScale.scale {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+
+    }
+    .percentageScale.scale.width {
+        width: 100%;
+        margin: 0;
+        -webkit-transition: all 0.7s ease;
+        -moz-transition: all 0.7s ease;
+        -o-transition: all 0.7s ease;
+        transition: all 0.7s ease;
+    }
+    .percentageScale.scale.width:before {
+        content: '';
+        width: 1px;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        left: 6.5%;
+
+    }
+    .text {
+        color: #666;
+        font-size: 13px;
+        font-weight: 400;
+        display: inline-block;
+        float: left;
+        margin:0;
+        -webkit-animation: text 1050ms ease-in infinite;
+        animation: text 1050ms ease-in infinite;
+        -webkit-transform: translatez(0);
+        transform: translatez(0);
+    }
+    .text-2 {
+        -webkit-animation-delay: 150ms;
+        animation-delay: 150ms;
+    }
+    .text-3 {
+        -webkit-animation-delay: 230ms;
+        animation-delay: 230ms;
+    }
+    .text-4 {
+        -webkit-animation-delay: 310ms;
+        animation-delay: 310ms;
+    }
+    .text-5 {
+        -webkit-animation-delay: 390ms;
+        animation-delay: 390ms;
+    }
+    .text-6 {
+        -webkit-animation-delay: 470ms;
+        animation-delay: 470ms;
+    }
+    .text-7 {
+        -webkit-animation-delay: 550ms;
+        animation-delay: 550ms;
+    }
+    .text-8 {
+        -webkit-animation-delay: 630ms;
+        animation-delay: 630ms;
+    }
+    .text-9 {
+        -webkit-animation-delay: 710ms;
+        animation-delay: 710ms;
+    }
+
+    @-webkit-keyframes text {
+      0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    30% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    45% {
+        -webkit-transform: translate3d(0, -1rem, 0);
+        transform: translate3d(0, -1rem, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes text {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+30% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+45% {
+    -webkit-transform: translate3d(0, -1rem, 0);
+    transform: translate3d(0, -1rem, 0);
+}
+100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+}
+</style>
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+
+<script src="js/vendor/modernizr.js"></script>
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- Cover -->
+<div id="wrapper">
+    <div class="container" data-namespace="Parlx">
+        <div class="node">
+            <!-- Preloader -->
+            <section id="preloader">
+                <div class="precontent">
+                    <h2>Imran Rovan</h2>
+                    <h3>UI Designer & Front-End Developer</h3>
+                </div>
+                <div class="percentageBar">
+                    <span class="percentageLoads"></span>
+                    <div class="textanim">
+                        <p class="text text-1">L</p>
+                        <p class="text text-2">O</p>
+                        <p class="text text-3">A</p>
+                        <p class="text text-4">D</p>
+                        <p class="text text-5">I</p>
+                        <p class="text text-6">N</p>
+                        <p class="text text-7">G</p>
+                        <p class="text text-8">.</p>
+                        <p class="text text-9">.</p>
+                    </div>
+                </div>
+                <div class="percentageScale">
+                </div>
+            </section>
+            <div id="page">
+                <!-- Header -->
+                <header>
+                    <div id="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+                </header>
+
+<!-- Nav 
+<div id="menuArea">
+    <input type="checkbox" id="menuToggle"></input>
+    <div class="menu-revealer"></div>
+    <label for="menuToggle" class="menuOpen">
+        <div class="open"></div>
+    </label>
+    <div class="menu menuEffects">
+        <label for="menuToggle"></label>
+        <div class="menuContent">
+            <nav>
+                <ul>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="project.html">Start a Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div> -->
+
+<!-- Gridlines -->
+<div class="gridlines">
+    <div class="gridline lineone"></div>
+</div>
+
+<!-- Contacts -->
+<div class="contact-fixed">
+    <ul>
+        <li><span>+91 81130 13108</span></li>
+        <li><a href="mailto:imran30mohamed@gmail.com">rovanlab@gmail.com</a></li>
+    </ul>
+</div>
+<!-- Social -->
+<div class="social-fixed">
+    <ul>
+        <li><a href="">behance</a></li>
+        <li><a href="">linkedin</a></li>
+        <li><a href="">twitter</a></li>
+    </ul>
+</div>
+<!-- Intro Block -->
+<section id="intro">
+    <h1>UX</h1>
+    <div class="introTxt parallax parallax--3">
+        <h2 class="ml3">d<span>i</span>gital craftsmen</h2>
+        <h5 class="ml12">Expert in creating and developing beautiful user interfaces</h5>
+    </div>
+
+</section>
+<select id="thisSelect" onchange="changeWords()" style="display: none">
+    <option value="0">Words</option>
+    <option value="1">Binary</option>
+</select>
+<!-- About Block -->
+<section id="about">
+    <div class="abt-info">
+        <h5 class="parallax parallax--3">I’m Imran Rovan,<br/> a Freelance Designer <br/>& Developer.</h5>
+        <p class="parallax parallax--4">With over 7 years experience, I am specialize in wireframing, user interface design, user experience thinking and front-end development.</p>
+        <!--  <p> I am passionate about creating beautiful and delightful digital interface for people and also really attached to participate on a project from the conception to final product. I have worked with a number of clients both through agencies and independently.</p> -->
+    </div>
+    <div class="skillImg parallax parallax--3">
+        <img src="img/skills.gif">
+    </div>
+    <ul class="skills clearfix">
+        <li  class="parallax parallax--3">
+            <h6>USER EXPERIENCE</h6>
+            <p>Strategy</p>
+            <p>Sketching</p>
+            <p>Wireframing</p>
+        </li>
+        <li class="parallax parallax--3">
+            <h6>UI Design</h6>
+            <p>Web design</p>
+            <p>Mobile Design</p>
+            <p>Dashboards</p>
+        </li>
+        <li class="parallax parallax--3">
+            <h6>UI DEVELOPMENT </h6>
+            <p>HTML5 & CSS3</p>
+            <p>CSS Frameworks</p>
+            <p>JavaScript  & jQuery </p>
+        </li>
+    </ul>
+</section>
+<section id=works>
+    <div class="workList">
+        <h5 class="parallax parallax--1">Some of my <span>latest works</span></h5>
+        <div class="workBlk clearfix">
+
+            <div class="workSingle parallax parallax--1">
+                <a href="https://www.behance.net/gallery/48851973/Landing-Page-Design-for-Beard-Blog-Club" target="_blank">
+                    <div class="tiltimg" data-tilt><img src="img/works/01.png" /></div>
+                </a> 
+            </div>
+            <div class="workSingle parallax parallax--1">
+                <a href="" data-tilt>
+                    <div class="tiltimg" data-tilt><img src="img/works/02.png" /></div>
+                </a> 
+            </div>
+            <div class="workSingle parallax parallax--3">
+                <a href="">
+                    <img src="img/works/03.png" />
+                </a> 
+            </div>
+            <div class="workSingle parallax parallax--2">
+                <a href="">
+                    <div class="tiltimg" data-tilt><img src="img/works/04.png" /></div>
+                </a> 
+            </div>
+            <div class="workSingle parallax parallax--2">
+                <a href="">
+                    <div class="tiltimg" data-tilt><img src="img/works/06.png" /></div>
+                </a> 
+            </div>
+            <div class="workSingle parallax parallax--3">
+                <a href="">
+                    <div class="tiltimg" data-tilt><img src="img/works/05.png" /></div>
+                </a> 
+            </div>
+            <div class="workSingle parallax parallax--3">
+                <a href="">
+                    <div class="tiltimg" data-tilt><img src="img/works/07.png" /></div>
+                </a> 
+            </div>
+            <div class="workSingle parallax parallax--1">
+                <a href="">
+                    <div class="tiltimg" data-tilt><img src="img/works/08.png" /></div>
+                </a> 
+            </div>
+            <div class="workSingle parallax parallax--1">
+                <a href="">
+                    <div class="tiltimg" data-tilt><img src="img/works/10.png" /></div>
+                </a> 
+            </div>
+            <div class="workSingle parallax parallax--3">
+                <a href="">
+                    <div class="tiltimg" data-tilt><img src="img/works/09.png" /></div>
+                </a> 
+            </div>
+            <div class="workSingle parallax parallax--3">
+                <a href="">
+                    <div class="tiltimg" data-tilt><img src="img/works/11.png" /></div>
+                </a> 
+            </div>
+            <div class="workSingle parallax parallax--3">
+                <a href="">
+                    <div class="tiltimg" data-tilt><img src="img/works/07.png" /></div>
+                </a> 
+            </div>
+            <div class="workSingle parallax parallax--3">
+                <a href="">
+                    <div class="tiltimg" data-tilt><img src="img/works/12.png" /></div>
+                </a> 
+            </div> 
+            <!--  <a href="" class="allworks" data-rellax-speed="-2"><span>checkout all my works</span></a> -->
+        </div>
+        <!-- <a href="">Start a project</a> -->
+    </div>
+</section>
+<!-- Mail Avilable -->
+<section id="email">
+        <div id="skillsTxt">
+    </div>
+    <div class="parallax parallax--3">
+        <p>I'm currently open to 
+        <span>new projects</span> & <span>opportunities</span>. If interested email me at 
+        <a href="mailto:rovanlab@gmail.com" class="parallax parallax--3">rovanlab@gmail.com</a></p>
+    </section>
+    <!-- Footer -->
+    <footer><span>&copy; 2017 RovanLab.</span></footer>
+</div>
+</div>
+</div>
+<!-- Jquery Library -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/CSSPlugin.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+<script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+<script>
+    $('.tiltimg').tilt({
+    glare: true,
+    maxGlare: .3,
+    transition: true,  
+    easing: "cubic-bezier(.03,.98,.52,.99)",
+    perspective: 500,
+})
+</script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>
