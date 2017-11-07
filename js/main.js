@@ -1,96 +1,62 @@
- $(document).ready(function() {
-                $('#fullpage').fullpage({
-                  	menu: '#menu',
-				//	anchors: ['about', 'works', 'blog', 'contact'],
-                    scrollingSpeed: 1000,
 
-                    afterLoad: function(anchorLink, index){
-					if(index == 2){
-						$('.aboutexp, .aboutdetails, .aboutportait').addClass('active');
-					}
+$( document ).ready(function() {
 
-					if(index == 3){
-						$('.works-fashion .workimg, .works-fashion .workdetails h3, .works-fashion .workdetails p, .works-fashion a').addClass('active');
-						
-					scrollElemToWatch_2 = document.getElementById('wrk-1'),
-					watcher_2 = scrollMonitor.create(scrollElemToWatch_2, -100),
-					wrk1 = new RevealFx(scrollElemToWatch_2, {
-						revealSettings : {
-							bgcolor: '#48a0ce',
-							direction: 'tb',
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-							}
-						}
-					})
-					wrk1.reveal();
-					
-       
-					}
+    $('.percentageLoads').animate({height:'100%'}, 2000, "linear");
 
-					if(index == 4){
-						$('.works-robots .workimg, .works-robots .workdetails h3, .works-robots .workdetails p,.works-robots a').addClass('active');
-					scrollElemToWatch_2 = document.getElementById('wrk-2'),
-					watcher_2 = scrollMonitor.create(scrollElemToWatch_2, -100),
-					wrk2 = new RevealFx(scrollElemToWatch_2, {
-						revealSettings : {
-							bgcolor: '#303038',
-							direction: 'lr',
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-							}
-						}
-					})
-					wrk2.reveal();
-					}
+    setTimeout(function(){ 
+        $('.percentageScale').addClass("scale");
+    }, 2005);
+    setTimeout(function(){ 
+        $(this).scrollTop(0);
+        $('.percentageScale').addClass("width");
+        $('.precontent, .textanim').animate({opacity:'0'}, 500, "linear");
+    }, 2500);
+    setTimeout(function(){ 
+        $('#preloader').hide();
+        $('body').addClass("show");
 
-					if(index == 5){
-						$('.works-eatti .workimg, .works-eatti .workdetails h3, .works-eatti .workdetails p, .works-eatti a').addClass('active');
-						
-					
-					scrollElemToWatch_2 = document.getElementById('wrk-3'),
-					watcher_2 = scrollMonitor.create(scrollElemToWatch_2, -100),
-					wrk3 = new RevealFx(scrollElemToWatch_2, {
-						revealSettings : {
-							bgcolor: '#b52352',
-							direction: 'tb',
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-							}
-						}
-					}),
-					
-					wrk7 = new RevealFx(document.querySelector('#wrk-4'), {
-						revealSettings : {
-							bgcolor: '#7f40f1',
-							direction: 'bt',
-							
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-							}
-						}
-					});
-					
-					wrk3.reveal();
-					wrk7.reveal();
-					}
-				if(index == 6){
-						$('.web-list .introContent').addClass('active');
-						
-						 
-						
-				}
-				if(index == 7){
-						$('.app-list .introContent').addClass('active');
-						
-						 
-						
-				}
+        // H2 Aniation
+        $('.ml3').each(function(){
+            $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+        });
 
-				}
-				
+        anime.timeline({loop: false})
+        .add({
+            targets: '.ml3 .letter',
+            opacity: [0,1],
+            easing: "easeInOutQuad",
+            duration: 2250,
+            delay: function(el, i) {
+                return 200 * (i+1)
+            }
+        })
 
-                });
 
-               
-            });
+        // H2 Aniation
+        $('.ml12').each(function(){
+            $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+        });
+
+        anime.timeline({loop: false})
+        .add({
+            targets: '.ml12 .letter',
+            translateX: [40,0],
+            translateZ: 0,
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: function(el, i) {
+                return 3260 + 30 * i;
+            }
+        })
+
+        
+    }, 3000);
+
+    setTimeout(function(){ 
+       $('.bg1').addClass("revealico");
+       $('.bg2').addClass("revealico");
+   }, 5000);
+// End document ready
+});
+
