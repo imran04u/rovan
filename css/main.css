@@ -153,6 +153,10 @@ header #logo img {
     z-index: 100;
     color: #fff;
 }
+.social-fixed ul li img {
+    width: auto;
+    height: 14px;
+}
 .contact-fixed {
     position: fixed;
     padding: 0;
@@ -294,13 +298,13 @@ nav {
     position: relative;
 }
 #skillsTxt {
-   width: 100%;
-   height: 100vh;
-   overflow: hidden;
-   position: absolute;
-   top: 0;
-   left: 0;
-   opacity: 0.1; 
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1; 
 }
 .introTxt {
     width: 800px;
@@ -371,40 +375,40 @@ nav {
 }
 
 @keyframes textVisible {
- from { opacity: 0;}
- to { opacity: 0.6;}
+    from { opacity: 0;}
+    to { opacity: 0.6;}
 }
 #intro .bg1 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0;
-  -webkit-transition: opacity 1s ease;
-  -moz-transition: opacity 1s ease;
-  -o-transition: opacity 1s ease;
-  transition: opacity 1s ease;
-  background: url("../img/floaters-1.png") no-repeat center center;
-  -webkit-transform: scale(0.8);
-  transform: scale(0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    background: url("../img/floaters-1.png") no-repeat center center;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
 }
 #intro .bg2 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: -50px;
-  left: 0;
-  z-index: -1;
-  opacity: 0;
-  -webkit-transition: opacity 2s ease;
-  -moz-transition: opacity 29s ease;
-  -o-transition: opacity 29s ease;
-  transition: opacity 2s ease;
-  background: url("../img/floaters-2.png") no-repeat center center;
-  -webkit-transform: scale(0.5);
-  transform: scale(0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: opacity 2s ease;
+    -moz-transition: opacity 29s ease;
+    -o-transition: opacity 29s ease;
+    transition: opacity 2s ease;
+    background: url("../img/floaters-2.png") no-repeat center center;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
 }
 #intro .bg1.revealico , #intro .bg2.revealico {
     opacity: 1;
@@ -698,7 +702,7 @@ nav {
     height:60px;
     width: 60px;
     background-color: #484545;
-    
+
 }
 .workSingle {
     width: 24%;
@@ -725,115 +729,121 @@ nav {
     margin-top: -150px;
 }
 /*.workBlk .workSingle:nth-child(4) {
-    margin-top: -130px;
+margin-top: -130px;
 }
 .workBlk .workSingle:nth-child(5) {
-    margin-top: -70px;
-    }*/
-    .workBlk .workSingle:nth-child(6) {
-        margin-left: 80px;
-    }
-    .workBlk .workSingle:nth-child(7), .workBlk .workSingle:nth-child(12) {
-        width: 34%;
-    }
-
-    .workBlk .workSingle:nth-child(10) {
-        margin-right: -150px;
-    }
-
-    .workBlk .workSingle:nth-child(11) {
-        margin-top: -90px;
-    }
-    .workBlk .workSingle:nth-child(12) {
-        margin-left: 60px;
-    }
-    .workBlk .workSingle:nth-child(8), .workBlk .workSingle:nth-child(9) {
-        margin-top: -20px;
-    }
-    #email {
-        text-align: center;
-        width: 100%;
-        height: 100vh;
-        position: relative;
-    }
-    #email p {
-        font-family: 'Playfair Display', serif;
-        color: #8a8a8a;
-        font-size: 40px;
-        margin: 0 auto;
-        max-width: 710px;
-        padding-top:35vh; 
-    }
-    #email span {
-        color: #fff;
-        position: relative;
-        padding-left: 5px;
-    }
-    #email span:before {
-        content: '';
-        width: 150px;
-        height: 16px;
-        background-color: rgba(0, 94, 189, 0.5);
-        position: absolute;
-        bottom: 4px;
-        left: -8px;
-        z-index: -1;
-    }
-    #email a {
-        color: #bf9f60;
-        text-decoration: none;
-    }
-    .tiltimg {
-        position: relative;
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        -webkit-transform: perspective(300px);
-        transform: perspective(300px);
-    }
-    .tiltimg span.backdrop {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        top: 0;
-        z-index: 999;
-        position: absolute;
-        background-image: -webkit-linear-gradient(300deg, #5a00ff 0%, #1fff73 100%, #1fff73 100%);
-        background-image: linear-gradient(150deg, #5a00ff 0%, #1fff73 100%, #1fff73 100%);
-        /* -webkit-transform: translateZ(0px); */
-        transform: translateZ(0px);
-        opacity: 0;
-        -webkit-transition: .5s;
-        transition: .5s;
-    }
-    .tiltimg:hover span.backdrop {
-        opacity: 0.3;
-    }
-    .js-tilt-glare {
-        border-radius: 10px;
-    }
-    .tiltimg  span.nameview {
-        position: absolute;
-        top: 51%;
-        left: 0%;
-        z-index: 99;
-        color: #fff;
-        font-size: 20px;
-        width: 100%;
-        opacity: 0;
-        text-align: center;
-        display: block;
-        -webkit-transform: translateZ(50px) scale(0.9);
-        transform: translateZ(50px) scale(0.9);
-        text-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
-        -webkit-transition: .5s;
-        transition: .5s;
-    }
-    .tiltimg:hover  span.nameview {
-        top: 48%;
-        opacity: 1;
-    }
-
-
+margin-top: -70px;
+}*/
+.workBlk .workSingle:nth-child(6) {
+    margin-left: 80px;
+}
+.workBlk .workSingle:nth-child(7), .workBlk .workSingle:nth-child(12) {
+    width: 34%;
+}
+.workBlk .workSingle:nth-child(10) {
+    margin-right: -150px;
+}
+.workBlk .workSingle:nth-child(11) {
+    margin-top: -90px;
+}
+.workBlk .workSingle:nth-child(12) {
+    margin-left: 60px;
+}
+.workBlk .workSingle:nth-child(8), .workBlk .workSingle:nth-child(9) {
+    margin-top: -20px;
+}
+#email {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#email p {
+    font-family: 'Playfair Display', serif;
+    color: #8a8a8a;
+    font-size: 40px;
+    margin: 0 auto;
+    max-width: 710px;
+    padding-top:35vh; 
+}
+#email span {
+    color: #fff;
+    position: relative;
+    padding-left: 5px;
+}
+#email span:before {
+    content: '';
+    width: 150px;
+    height: 16px;
+    background-color: rgba(0, 94, 189, 0.5);
+    position: absolute;
+    bottom: 4px;
+    left: -8px;
+    z-index: -1;
+}
+#email a {
+    color: #bf9f60;
+    text-decoration: none;
+}
+.tiltimg, .tiltmob {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: perspective(300px);
+    transform: perspective(300px);
+}
+.tiltimg span.backdrop, .tiltmob span.backdrop {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+    z-index: 999;
+    position: absolute;
+    background-image: -webkit-linear-gradient(300deg, #5a00ff 0%, #1fff73 100%, #1fff73 100%);
+    background-image: linear-gradient(150deg, #5a00ff 0%, #1fff73 100%, #1fff73 100%);
+    /* -webkit-transform: translateZ(0px); */
+    transform: translateZ(0px);
+    opacity: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.tiltimg:hover span.backdrop, .tiltmob:hover span.backdrop {
+    opacity: 0.4;
+}
+.js-tilt-glare {
+    border-radius: 10px;
+}
+.tiltimg  span.nameview, .tiltmob span.nameview {
+    position: absolute;
+    top: 51%;
+    left: 0%;
+    z-index: 99;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    display: block;
+    -webkit-transform: translateZ(50px) scale(0.9);
+    transform: translateZ(50px) scale(0.9);
+    text-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.tiltimg:hover  span.nameview, .tiltmob:hover  span.nameview {
+    top: 48%;
+    opacity: 1;
+}
+.workBlk .workSingle:nth-child(7) .js-tilt-glar e, 
+.workBlk .workSingle:nth-child(7) .tiltimg span.backdrop,
+.workBlk .wo rkSin gle:n th-child(12) .js-tilt-glare,
+.workBlk .workSingle:nth-child(12) .tiltimg span.backdrop {
+    border-radius: 30px;
+}
+.workBlk .workSingle:nth-child(3) .js-tilt-glare,
+.workBlk .workSingle:nth-child(3) .tiltmob span.backdrop {
+    border-radius: 55px;
+}
 
 
 
