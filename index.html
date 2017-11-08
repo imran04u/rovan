@@ -12,223 +12,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <!-- Preload Style -->
     <style>
-    #preloader {
-        width: 100%;
-        height: 100vh;
-        background: #fff;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 999;
-    }
-    #preloader:before {
-        content: '';
-        background:  url(img/logo-line.png) no-repeat center center;
-        background-size: auto 75%;
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        left: 0;
-        top: 0;
-        opacity: 0.1;
-    }
-    /*#preloader:after {
-        content: '';
-        background:  url(img/logo-full.png) no-repeat bottom 30px right 30px;
-        background-size: auto 40px;
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        left: 0;
-        top: 0;
-        opacity: 1;
-        }*/
-        .precontent {
-            width: 100%;
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .precontent h2 {
-            font-size: 100px;
-            color: #4c4c4c;
-            line-height: 100px;
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            text-transform: uppercase;
-        }
-        .precontent h3 {
-            font-size: 18px;
-            color: #1262b3;
-            line-height: 35px;
-            font-weight: 400;
-            margin: 0;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-        .percentageBar, .percentageScale {
-            margin-left: 6.5%;
-            width: 2px;
-            height: 80vh;
-            margin-top: 10vh;
-            background-color: #eee;
-            position: relative;
-        }
-        .percentageBar .textanim {
-            position: absolute;
-            bottom:0;
-            left: 5px;
-            font-size: 12px;
-            line-height: 12px;
-            color: #333;
-            width: 100px;
-            text-transform: uppercase;
-        }
-        .percentageLoads {
-         margin-left: 6.5%;
-         width: 2px;
-         margin-top: 10vh;
-         background-color: #333;
-         width: 2px;
-         height: 0vh;
-         position: absolute;
-         bottom:0;
-         left: 0;
-         -webkit-transition: all 0.5s ease;
-         -moz-transition: all 0.5s ease;
-         -o-transition: all 0.5s ease;
-         transition: all 0.5s ease;
-     }
-     .percentageScale {
-        position: absolute;
-        top: 0;
-        height: 100vh;
-        margin-top: 0vh;
-        background-color: #333;
-        -webkit-transform: scale(0);
-        -moz-transform: scale(0);
-        -o-transform: scale(0);
-        -ms-transform: scale(0);
-        transform: scale(0);
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    .percentageScale.scale {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-
-    }
-    .percentageScale.scale.width {
-        width: 100%;
-        margin: 0;
-        -webkit-transition: all 0.7s ease;
-        -moz-transition: all 0.7s ease;
-        -o-transition: all 0.7s ease;
-        transition: all 0.7s ease;
-    }
-    .percentageScale.scale.width:before {
-        content: '';
-        width: 1px;
-        height: 100vh;
-        background: rgba(255, 255, 255, 0.1);
-        position: absolute;
-        left: 6.5%;
-
-    }
-    .text {
-        color: #666;
-        font-size: 13px;
-        font-weight: 400;
-        display: inline-block;
-        float: left;
-        margin:0;
-        -webkit-animation: text 1050ms ease-in infinite;
-        animation: text 1050ms ease-in infinite;
-        -webkit-transform: translatez(0);
-        transform: translatez(0);
-    }
-    .text-2 {
-        -webkit-animation-delay: 150ms;
-        animation-delay: 150ms;
-    }
-    .text-3 {
-        -webkit-animation-delay: 230ms;
-        animation-delay: 230ms;
-    }
-    .text-4 {
-        -webkit-animation-delay: 310ms;
-        animation-delay: 310ms;
-    }
-    .text-5 {
-        -webkit-animation-delay: 390ms;
-        animation-delay: 390ms;
-    }
-    .text-6 {
-        -webkit-animation-delay: 470ms;
-        animation-delay: 470ms;
-    }
-    .text-7 {
-        -webkit-animation-delay: 550ms;
-        animation-delay: 550ms;
-    }
-    .text-8 {
-        -webkit-animation-delay: 630ms;
-        animation-delay: 630ms;
-    }
-    .text-9 {
-        -webkit-animation-delay: 710ms;
-        animation-delay: 710ms;
-    }
-
-    @-webkit-keyframes text {
-      0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-    30% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-    45% {
-        -webkit-transform: translate3d(0, -1rem, 0);
-        transform: translate3d(0, -1rem, 0);
-    }
-    100% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes text {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-30% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-45% {
-    -webkit-transform: translate3d(0, -1rem, 0);
-    transform: translate3d(0, -1rem, 0);
-}
-100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-}
+    #preloader,#preloader:before{height:100vh;left:0;top:0;width:100%}.precontent h2,.precontent h3{margin:0;text-transform:uppercase}#preloader{background:#fff;position:fixed;z-index:999}#preloader:before{content:'';background:url(img/logo-line.png) center center no-repeat;background-size:auto 75%;position:absolute;opacity:.1}.precontent{width:100%;text-align:center;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}.precontent h2{font-size:100px;color:#4c4c4c;line-height:100px;font-family:Poppins,sans-serif}.precontent h3{font-size:18px;color:#1262b3;line-height:35px;font-weight:400;letter-spacing:3px}.percentageBar,.percentageScale{margin-left:6.5%;width:2px;height:80vh;margin-top:10vh;background-color:#eee;position:relative}.percentageBar .textanim{position:absolute;bottom:0;left:5px;font-size:12px;line-height:12px;color:#333;width:100px;text-transform:uppercase}.percentageLoads{margin-left:6.5%;margin-top:10vh;background-color:#333;width:2px;height:0;position:absolute;bottom:0;left:0;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease}.percentageScale{position:absolute;top:0;height:100vh;margin-top:0;background-color:#333;-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease}.percentageScale.scale{-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}.percentageScale.scale.width{width:100%;margin:0;-webkit-transition:all .7s ease;-moz-transition:all .7s ease;-o-transition:all .7s ease;transition:all .7s ease}.percentageScale.scale.width:before{content:'';width:1px;height:100vh;background:rgba(255,255,255,.1);position:absolute;left:6.5%}.text{color:#666;font-size:13px;font-weight:400;display:inline-block;float:left;margin:0;-webkit-animation:text 1.05s ease-in infinite;animation:text 1.05s ease-in infinite;-webkit-transform:translatez(0);transform:translatez(0)}.text-2{-webkit-animation-delay:150ms;animation-delay:150ms}.text-3{-webkit-animation-delay:230ms;animation-delay:230ms}.text-4{-webkit-animation-delay:310ms;animation-delay:310ms}.text-5{-webkit-animation-delay:390ms;animation-delay:390ms}.text-6{-webkit-animation-delay:470ms;animation-delay:470ms}.text-7{-webkit-animation-delay:550ms;animation-delay:550ms}.text-8{-webkit-animation-delay:630ms;animation-delay:630ms}.text-9{-webkit-animation-delay:710ms;animation-delay:710ms}@-webkit-keyframes text{0%,100%,30%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}45%{-webkit-transform:translate3d(0,-1rem,0);transform:translate3d(0,-1rem,0)}}@keyframes text{0%,100%,30%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}45%{-webkit-transform:translate3d(0,-1rem,0);transform:translate3d(0,-1rem,0)}}
 </style>
 
-<link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
-
 <script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
@@ -361,7 +148,7 @@
         <h5 class="parallax parallax--1">Some of my <span>latest works</span></h5>
         <div class="workBlk clearfix">
 
-            <div class="workSingle parallax parallax--1">
+            <div class="workSingle parallax parallax--4">
                 <a href="https://www.behance.net/gallery/48851973/Landing-Page-Design-for-Beard-Blog-Club" target="_blank">
                     <div class="tiltimg" data-tilt><img src="img/works/01.png" />
                         <span class="backdrop"></span>
@@ -369,7 +156,7 @@
                     </div>
                 </a> 
             </div>
-            <div class="workSingle parallax parallax--1">
+            <div class="workSingle parallax parallax--4">
                 <a href="https://www.behance.net/gallery/48210921/Apparel-Shoes-Online-Store" target="_blank">
                     <div class="tiltimg" data-tilt><img src="img/works/02.png" />
                         <span class="backdrop"></span>
@@ -380,90 +167,90 @@
             <div class="workSingle parallax parallax--3">
                 <a href="https://invis.io/3JCGYN4RF#/134736150_01splash" target="_blank">
                     <div class="tiltmob" data-tilt><img src="img/works/03.png" />
-                         <span class="backdrop"></span>
-                        <span class="nameview">Visit Invission</span>
-                    </div>
-                </a> 
-            </div>
-            <div class="workSingle parallax parallax--2">
-                <a href="https://www.uplabs.com/posts/landing-page-for-spotless-agency" target="_blank">
-                    <div class="tiltimg" data-tilt><img src="img/works/04.png" />
-                     <span class="backdrop"></span>
-                     <span class="nameview">Visit Uplabs</span>
-                 </div>
-             </a> 
-         </div>
-         <div class="workSingle parallax parallax--2">
-            <a href="" target="_blank">
-                <div class="tiltimg" data-tilt><img src="img/works/06.png" />
-                 <span class="backdrop"></span>
-                 <span class="nameview">Visit Invision</span>
-             </div>
-         </a> 
-     </div>
-     <div class="workSingle parallax parallax--3">
-        <a href="http://rovanlab.in/sites/haap" target="_blank">
-            <div class="tiltimg" data-tilt><img src="img/works/05.png" />
-             <span class="backdrop"></span>
-             <span class="nameview">Visit Website</span>
-         </div>
-     </a> 
- </div>
- <div class="workSingle parallax parallax--3">
+                       <span class="backdrop"></span>
+                       <span class="nameview">Visit Invission</span>
+                   </div>
+               </a> 
+           </div>
+           <div class="workSingle parallax parallax--2">
+            <a href="https://www.uplabs.com/posts/landing-page-for-spotless-agency" target="_blank">
+                <div class="tiltimg" data-tilt><img src="img/works/04.png" />
+                   <span class="backdrop"></span>
+                   <span class="nameview">Visit Uplabs</span>
+               </div>
+           </a> 
+       </div>
+       <div class="workSingle parallax parallax--2">
+        <a href="" target="_blank">
+            <div class="tiltimg" data-tilt><img src="img/works/06.png" />
+               <span class="backdrop"></span>
+               <span class="nameview">Visit Invision</span>
+           </div>
+       </a> 
+   </div>
+   <div class="workSingle parallax parallax--3">
+    <a href="http://rovanlab.in/sites/haap" target="_blank">
+        <div class="tiltimg" data-tilt><img src="img/works/05.png" />
+           <span class="backdrop"></span>
+           <span class="nameview">Visit Website</span>
+       </div>
+   </a> 
+</div>
+<div class="workSingle parallax parallax--3">
     <a href="http://augustrobotics.com/" target="_blank">
         <div class="tiltimg" data-tilt><img src="img/works/07.png" />
-         <span class="backdrop"></span>
-         <span class="nameview">Visit Website</span>
-     </div>
- </a> 
+           <span class="backdrop"></span>
+           <span class="nameview">Visit Website</span>
+       </div>
+   </a> 
 </div>
 <div class="workSingle parallax parallax--1">
     <a href="http://www.k-active.com" target="_blank">
         <div class="tiltimg" data-tilt><img src="img/works/08.png" />
-         <span class="backdrop"></span>
-         <span class="nameview">Visit Website</span>
-     </div>
- </a> 
+           <span class="backdrop"></span>
+           <span class="nameview">Visit Website</span>
+       </div>
+   </a> 
 </div>
 <div class="workSingle parallax parallax--1">
     <a href="http://rovanlab.in/sites/blueskies/" target="_blank">
         <div class="tiltimg" data-tilt><img src="img/works/10.png" />
-         <span class="backdrop"></span>
-         <span class="nameview">Visit Website</span>
-     </div>
- </a> 
+           <span class="backdrop"></span>
+           <span class="nameview">Visit Website</span>
+       </div>
+   </a> 
 </div>
 <div class="workSingle parallax parallax--3">
     <a href="" target="_blank">
         <div class="tiltimg" data-tilt><img src="img/works/09.png" />
-         <span class="backdrop"></span>
-         <span class="nameview">View @ Behance</span>
-     </div>
- </a> 
+           <span class="backdrop"></span>
+           <span class="nameview">View @ Behance</span>
+       </div>
+   </a> 
 </div>
 <div class="workSingle parallax parallax--3">
     <a href="http://rovanlab.in/sites/senseta/index.html" target="_blank">
         <div class="tiltimg" data-tilt><img src="img/works/11.png" />
-         <span class="backdrop"></span>
-         <span class="nameview">Visit Website</span>
-     </div>
- </a> 
+           <span class="backdrop"></span>
+           <span class="nameview">Visit Website</span>
+       </div>
+   </a> 
 </div>
 <div class="workSingle parallax parallax--3">
     <a href="https://invis.io/5MDTG6KY9#/129633869_1" target="_blank">
         <div class="tiltimg" data-tilt><img src="img/works/13.png" />
-         <span class="backdrop"></span>
-         <span class="nameview">Visit Invision</span>
-     </div>
- </a> 
+           <span class="backdrop"></span>
+           <span class="nameview">Visit Invision</span>
+       </div>
+   </a> 
 </div>
 <div class="workSingle parallax parallax--3">
     <a href="http://rovanlab.in/sites/icr/index.html" target="_blank">
         <div class="tiltimg" data-tilt><img src="img/works/12.png" />
-         <span class="backdrop"></span>
-         <span class="nameview">Visit Website</span>
-     </div>
- </a> 
+           <span class="backdrop"></span>
+           <span class="nameview">Visit Website</span>
+       </div>
+   </a> 
 </div> 
 <!--  <a href="" class="allworks" data-rellax-speed="-2"><span>checkout all my works</span></a> -->
 </div>
@@ -488,30 +275,12 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/CSSPlugin.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
     <script>
-        $('.tiltimg').tilt({
-            glare: true,
-            maxGlare: .3,
-            transition: true,  
-            easing: "cubic-bezier(.03,.98,.52,.99)",
-            perspective: 500,
-        })
-        $('.tiltmob').tilt({
-            glare: false,
-            maxGlare: .3,
-            transition: true,  
-            easing: "cubic-bezier(.03,.98,.52,.99)",
-            perspective: 900,
-        })
+        
         
     </script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
