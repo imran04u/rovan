@@ -1,0 +1,161 @@
+@media screen and (min-width: 1024px) {
+	#burgernav {
+		display: none;
+	}
+	#menu {
+		float: right;
+		margin-right: 80px;
+	}
+	#menu ul {
+		margin-top: 25px;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+	#menu ul li {
+		float:left;
+		margin-right:45px;
+	}
+	#menu ul li a {
+		text-transform:uppercase;
+		font-size:14px;
+		font-weight: 600;
+		color: #fff;
+	}
+	#menu ul li:first-child a, #menu ul li:nth-child(2) a {
+		color: #444;
+	}
+	header.header-fixed #menu ul {
+		margin-top: 15px;
+	}
+	header.header-fixed  #menu ul li a, header.header-fixed  #menu ul li:first-child a,header.header-fixed  #menu ul li:nth-child(2) a {
+		color: #333;
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	#clients ul li img, #partners ul li img {
+		padding: 20px 10px;
+		height: 140px;
+	}
+	.info-box-img {
+		width: 49%;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.intro {
+		width: 100%;
+		height: 60vh;
+	}
+	.fullscreen-bg {
+		height: 60vh;
+	}
+	@media (min-aspect-ratio: 16/9) {
+		.bg_video {
+			width: 290%;
+			left: -80%;
+		}
+	}
+
+	@media (max-aspect-ratio: 16/9) {
+		.bg_video {
+			width: 290%;
+			left: -80%;
+		}
+	}
+	#clients ul li img, #partners ul li img {
+		padding: 20px 2px;
+		height: 120px;
+	}
+	.info-box-img {
+		width:100%;
+		top: 0;
+		left: 0px;
+		opacity: 0.2;
+	}
+	#counter ul li {
+		width: 50%;
+		margin-bottom: 25px;
+	}
+	#counter ul li:nth-child(2) {
+		border-right: none;
+	}
+	#partners ul.partner li {
+		float: left;
+		width: 33%;
+	}
+	#partners ul.partner li img {
+		padding: 15px 10px;
+	}
+}
+@media screen and (max-width: 767px) {
+	header .logo {
+		margin-left: 10px;
+	}
+	header .logo a.logo-name {
+		margin-left: 10px;
+	}
+	header .logo .logo-name img {
+		display: none
+	}
+	.intro {
+		width: 100%;
+		height: 60vh;
+	}
+	.fullscreen-bg {
+		height: 60vh;
+	}
+	@media (min-aspect-ratio: 16/9) {
+		.bg_video {
+			width: 290%;
+			left: -80%;
+		}
+	}
+
+	@media (max-aspect-ratio: 16/9) {
+		.bg_video {
+			width: 290%;
+			left: -80%;
+		}
+	}
+	#clients ul li, #partners ul li {
+		float: none;
+		width: 100%;
+	}
+	#clients ul li img, #partners ul li img {
+		margin: 0 auto;
+		padding: 10px 0;
+		height: 100px;
+	}
+	.info-box-img {
+		width:100%;
+		top: 0;
+		left: 0px;
+		opacity: 0.2;
+	}
+	#counter ul li {
+		width: 50%;
+		margin-bottom: 25px;
+	}
+	#counter ul li:nth-child(2) {
+		border-right: none;
+	}
+	#counter ul li h3 {
+		font-size: 50px;
+		margin-bottom: 15px;
+	}
+	#partners ul.partner li {
+		float: left;
+		width: 50%;
+	}
+	footer {
+		background-size: auto;
+	}
+	footer p {
+		bottom: 55px;
+		left: 10px;
+	}
+	footer ul {
+		right: 10px;
+	}
+}
