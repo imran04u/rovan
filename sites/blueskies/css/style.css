@@ -186,7 +186,7 @@ header {
 }
 
 .aboutBlk {
-	padding:50px 0; 
+	padding:90px 0 50px 0; 
 }
 .aboutBlk h5 {
 	color: #0374a6;
@@ -254,11 +254,11 @@ header {
 .serviceBlk {
 	background: #f4f4f4 url(../images/service.jpg) no-repeat right 70px bottom;
 	background-size: contain;
-	padding: 50px 0;
+	padding: 90px 0 60px 0;
 }
 .serviceList li {
 	width: 40%;
-	float: left;
+	display:inline-block;
 	text-align: center; 
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -302,9 +302,17 @@ header {
 .serviceban h2 span {
 	color: #b9d057;
 }
+.clientsban {
+	background: #f4f4f4 url(../images/clientsban.jpg) no-repeat center top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.clientsban h2 span {
+	color: orange;
+}
 .clientBlk {
 	background-color:#fff;
-	padding: 50px 0; 
+	padding: 90px 0 50px 0; 
 }
 .heading {
 	color: #0374a6;
@@ -354,10 +362,10 @@ header {
 	width: 100%;
 }
 .testiCaro p::before {
-	content: "“";
+	content: "â€œ";
 }
 .testiCaro p::after {
-	content: "”";
+	content: "â€";
 }
 .testiCaro h5 {
 	color: #006aa5;
@@ -431,7 +439,7 @@ footer {
 }
 .jobsBlk {
 	background-color: #243141;
-	padding:50px 0;
+	padding:90px 0 50px 0;
 	position: relative;
 }
 .jobslist {
@@ -450,33 +458,30 @@ footer {
 	color: #fff;
 }
 .jobslist ul li {
-	width: 100%;
+	width: 48%;
 	border-bottom: 1px rgba(255,255,255,0.1) solid;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
+	display: inline-block;
+	padding-right: 15px;
 }
 .jobslist ul li span {
 	color: #ccc;
-	float: left;
+	float: none;
 	font-size: 13px;
-	padding-right: 20px;
-	padding-left:20px;
-	border-left: 1px #38495f solid;
-	border-right: 1px #16222f solid;
 }
 .jobslist ul li span:first-child {
-	width: 50%;
+	width: 100%;
 	padding-left: 0;
 	border-left: 0;
 	font-size: 15px;
+	display: block;
 }
 .jobslist ul li span:nth-child(2) {
 	width: 30%;
 }
 .jobslist ul li span:last-child {
-	width: 20%;
-	padding-right: 0;
-	border-right: 0;
+	width: 100%;
 }
 .jobslist ul li span a {
 	color:#fff;
@@ -505,4 +510,109 @@ a.morebtn:after {
 }
 a.morebtn:hover {
 	padding-right:40px;
+}
+.fix-con 
+{
+    width:100%;
+    padding:25px 0;
+}
+.con-left 
+{
+    float:left;
+}
+.con-left img 
+{
+    margin-top: 10px;
+}
+.con-right 
+{
+   padding: 5px 0 0 0;
+margin-left: 80px;
+word-wrap: break-word;
+}
+.con-right h4 
+{
+    font-size:14px;
+    margin-bottom:5px;
+}
+.con-right h3 
+{
+    font-size:17px;
+    font-weight:300;
+    color:#239963;
+}
+.con-right h3 a 
+{
+    color:#239963;
+}
+.contactBlk {
+	background-color: #fff;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+.form-group  input[type="text"], .form-group textarea{
+display: block;
+width: 100%;
+height: auto;
+padding: 13px 20px;
+color: #808080;
+font-size: 13px;
+font-weight: 400;
+-webkit-font-smoothing: antialiased;
+margin-bottom: 20px;
+outline: none;
+background: #fff;
+border: 1px solid transparent;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+-o-border-radius: 2px;
+border-radius: 2px;
+transition: all 0.17s ease-in-out;
+-moz-transition: all 0.17s ease-in-out;
+-webkit-transition: all 0.17s ease-in-out;
+-o-transition: all 0.17s ease-in-out;
+}
+
+.form-group textarea 
+{
+    height:178px;
+}
+#quote 
+{
+    padding: 90px 0;
+    background-color: #eee;
+}
+#contact-form .submit-area {
+text-align: center;
+padding-top: 40px;
+}
+.submit-area button {
+display: inline-block;
+border: 1px solid #255c9f;
+color: #255c9f;
+font-size: 14px;
+padding: 10px 20px;
+display: block;
+margin: 0 auto;
+background: transparent;
+text-transform: uppercase;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+-o-border-radius: 2px;
+border-radius: 2px;
+transition: all 0.17s ease-in-out;
+-moz-transition: all 0.17s ease-in-out;
+-webkit-transition: all 0.17s ease-in-out;
+-o-transition: all 0.17s ease-in-out;
+}
+.submit-area button:hover 
+{
+    color: #ffffff;
+background: #255c9f;
+transition: all 0.17s ease-in-out;
+-moz-transition: all 0.17s ease-in-out;
+-webkit-transition: all 0.17s ease-in-out;
+-o-transition: all 0.17s ease-in-out;
 }
