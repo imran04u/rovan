@@ -353,6 +353,9 @@
 		<!-- LayerSlider Script --> 
 		<script src="js/plugins.js" type="text/javascript"></script> 
 		<script type="text/javascript">
+			$(window).on('beforeunload', function(){
+  $(window).scrollTop(0);
+});
 			// Scroll
 			$(function() {
 				$('.navbar-nav a[href*=#]:not([href=#])').click(function() {
