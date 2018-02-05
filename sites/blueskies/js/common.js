@@ -1,11 +1,4 @@
-// Mobile Menu
-if($(window).width() <= 991){
- $("#menu").mmenu({
-   "offCanvas": {
-     "position": "right"
-   }
- });
-}
+
 
  // Header Fixed   
  $(window).scroll(function () {

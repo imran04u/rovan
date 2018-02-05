@@ -140,6 +140,9 @@ header {
 	color: #000;
 	padding: 8px 15px;
 }
+#menu li a:hover, #menu li a:active {
+	color: #439eda;
+}
 #menu li:last-child a {
 	background-color: #80c436;
 	border-radius: 30px;
@@ -336,72 +339,56 @@ header {
 	list-style: none;
 	margin:25px 0;
 }
-.clientBlk ul li {
-	width: 33%;
-	float: left; 
-	border-right: 1px solid #eee;
-	border-bottom: 1px solid #eee;
-}
-.clientBlk ul li:nth-child(3n+3), .clientBlk ul li:last-child {
-	border-right: 0;
-}
+
 .clientBlk ul li img {
 	padding:10px 5px;
 	width: 100%;
 }
-
+.testimonial h2 {
+	color: #fff;
+}
 .testiCaro p {
-	color: #333;
+	color: #fff;
 	font-family: "Playfair Display";
-	font-size: 18px;
+	font-size: 14px;
 	font-style: italic;
-	line-height: 34px;
+	line-height: 26px;
 	position: relative;
-	padding: 30px 0 15px 0;
-	background: url(../images/star.jpg) no-repeat center 10px;
+	padding: 0px 0 15px 0;
+	/*background: url(../images/star.jpg) no-repeat center 10px;*/
 	width: 100%;
 }
 .testiCaro p::before {
-	content: "â€œ";
+	content: "";
 }
 .testiCaro p::after {
-	content: "â€";
+	content: "";
 }
 .testiCaro h5 {
-	color: #006aa5;
-	font-size: 20px;
-	text-align: center;
-	text-transform: uppercase;
+    color: #dcdcdc;
+    font-size: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 45px;
 }
-.testiCaro h5 span {
-	color: #000;
-	font-size: 12px;
-	text-align: center;
-	font-weight: 400;
-	text-transform: capitalize;
-	display: block;
-	padding-top: 5px;
+.testiCaro h5 img {
+	float: left;
+	margin-right:15px; 
 }
+
 .testiCaro img {
 	height: 40px;
 	margin: 0 auto 10px;
 	width: auto !important;
 }
-.clientside {
-	padding-right: 30px;
-	border-right:1px #ddd solid;
-}
-.testiside {
-	border-left:1px #ddd solid;
-	margin-left: -1px;
-}
+
 footer {
 	background: #000f19;
 	padding: 15px 0;
 	color: #fff;
 }
 .copyrights {
-	float: left;
+	text-align: center;
 	font-size: 13px;
 	color:#fff;
 }
@@ -511,108 +498,130 @@ a.morebtn:after {
 a.morebtn:hover {
 	padding-right:40px;
 }
-.fix-con 
-{
-    width:100%;
-    padding:25px 0;
+.contact {
+	height: 400px;
+	background-color: #eee;
+	padding: 30px;
 }
-.con-left 
-{
-    float:left;
+.cvform {
+	height: 400px;
+	background-color: #80c436;
+	padding: 30px;
 }
-.con-left img 
-{
-    margin-top: 10px;
+.testimonial {
+	height: 400px;
+	background-color: #5e5e5e;
+	padding: 30px;
 }
-.con-right 
-{
-   padding: 5px 0 0 0;
-margin-left: 80px;
-word-wrap: break-word;
+.con-right h4 {
+	font-size: 14px;
+	margin-bottom: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
 }
-.con-right h4 
-{
-    font-size:14px;
-    margin-bottom:5px;
+.con-right h3 {
+	font-size: 17px;
+	font-weight: 400;
+	color: #239963;
 }
-.con-right h3 
-{
-    font-size:17px;
-    font-weight:300;
-    color:#239963;
+.con-right h3 a {
+	color: #239963;
 }
-.con-right h3 a 
-{
-    color:#239963;
+.fot-mail h3 {
+	background: url(../images/mail.png) no-repeat left  0px;
+	padding-left: 25px;  
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px #ccc solid;
 }
-.contactBlk {
-	background-color: #fff;
+.con-right h3 a img {
+	display: inline-block;
+	margin-right: 10px;
+}
+.clientside h2 {
+	margin-bottom: 25px;
+}
+/*Responsive*/
+@media screen and (max-width:991px) {
+	#menu li a {
+		padding: 8px 10px;
+	}
+	.aboutBlk p {
+		padding-left: 0px;
+	}
+	.serviceban h2 br {
+		display: none;
+	}
+	.sub-head {
+		font-size: 30px !important;
+		line-height: 30px !important;
+	}
+	.abtcontent h3 {
+		margin-top: -240px;
+		width: 400px;
+		padding: 30px 30px;
+		font-size: 22px;
+		line-height: 40px;
+	}
+	.jobimg {
+		opacity: 0.1;
+		width: 100%;
+	}
+	.fix-con .col-md-4 {
+		height: 70px;
+	}
 }
 
-.form-group {
-margin-bottom: 15px;
-}
-.form-group  input[type="text"], .form-group textarea{
-display: block;
-width: 100%;
-height: auto;
-padding: 13px 20px;
-color: #808080;
-font-size: 13px;
-font-weight: 400;
--webkit-font-smoothing: antialiased;
-margin-bottom: 20px;
-outline: none;
-background: #fff;
-border: 1px solid transparent;
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
--o-border-radius: 2px;
-border-radius: 2px;
-transition: all 0.17s ease-in-out;
--moz-transition: all 0.17s ease-in-out;
--webkit-transition: all 0.17s ease-in-out;
--o-transition: all 0.17s ease-in-out;
-}
-
-.form-group textarea 
-{
-    height:178px;
-}
-#quote 
-{
-    padding: 90px 0;
-    background-color: #eee;
-}
-#contact-form .submit-area {
-text-align: center;
-padding-top: 40px;
-}
-.submit-area button {
-display: inline-block;
-border: 1px solid #255c9f;
-color: #255c9f;
-font-size: 14px;
-padding: 10px 20px;
-display: block;
-margin: 0 auto;
-background: transparent;
-text-transform: uppercase;
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
--o-border-radius: 2px;
-border-radius: 2px;
-transition: all 0.17s ease-in-out;
--moz-transition: all 0.17s ease-in-out;
--webkit-transition: all 0.17s ease-in-out;
--o-transition: all 0.17s ease-in-out;
-}
-.submit-area button:hover 
-{
-    color: #ffffff;
-background: #255c9f;
-transition: all 0.17s ease-in-out;
--moz-transition: all 0.17s ease-in-out;
--webkit-transition: all 0.17s ease-in-out;
--o-transition: all 0.17s ease-in-out;
+@media screen and (max-width:767px) {
+	#menu {
+		display: none;
+	}	
+	.ls-slide .sub-head {
+		width: 70% !important;
+		font-size: 18px !important;
+		line-height: 25px !important;
+	}
+	.sub-desc {
+		display: none !important;
+	}
+	.banner-section {
+		margin-top: 80px;
+	}
+	.serviceList li {
+		width: 100%;
+		margin-bottom: 20px;
+		display: block;
+	}
+	.serviceban h2 {
+		text-align: center;
+		font-size: 20px;
+		line-height: 28px;
+		color: #fff;
+		padding: 50px 0;
+	}
+	.serviceBlk {
+		background: #f4f4f4 !important;
+	}
+	.jobslist ul li {
+		width: 100%;
+		display: block;
+	}
+	.jobslist {
+		float: none
+	}
+	.aboutBlk, .serviceBlk {
+		padding:   40px 0;
+	}
+	.abtcontent {
+		margin: 0 15px;
+	}
+	.abtcontent h3 {
+		position: relative;
+		margin-top: 0;
+		width: 100%;
+	}
+	.aboutBlk h2 {
+		font-size: 25px;
+		line-height: 38px;
+	}
 }
