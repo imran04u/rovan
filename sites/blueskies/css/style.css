@@ -499,17 +499,17 @@ a.morebtn:hover {
 	padding-right:40px;
 }
 .contact {
-	height: 400px;
+	height: 350px;
 	background-color: #eee;
 	padding: 30px;
 }
 .cvform {
-	height: 400px;
+	height: 350px;
 	background-color: #80c436;
 	padding: 30px;
 }
 .testimonial {
-	height: 400px;
+	height: 350px;
 	background-color: #5e5e5e;
 	padding: 30px;
 }
@@ -530,8 +530,8 @@ a.morebtn:hover {
 .fot-mail h3 {
 	background: url(../images/mail.png) no-repeat left  0px;
 	padding-left: 25px;  
-	margin-bottom: 20px;
-	padding-bottom: 20px;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
 	border-bottom: 1px #ccc solid;
 }
 .con-right h3 a img {
@@ -540,6 +540,33 @@ a.morebtn:hover {
 }
 .clientside h2 {
 	margin-bottom: 25px;
+}
+#contactus .contact-title {
+	width: 40%;
+	margin-right: 4%;
+	float: left;
+	padding-top: 15%;
+}
+#contactus .contact-title h6 {
+	    color: #d8ffae;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+	}
+#contactus .contact-title h5 {
+    color: #fff;
+    font-family: "Carnas Light";
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#contactus .contact-form {
+	width: 55%;
+	margin-right: 0;
+	float: right;
 }
 /*Responsive*/
 @media screen and (max-width:991px) {
