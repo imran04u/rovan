@@ -78,16 +78,16 @@ a, a:hover, a:focus {
      */
  }
  .clear {
+     clear: both;
+     font-size: 0;
+     height: 0;
+ }
+ .clearfix:after {
    clear: both;
-   font-size: 0;
+   content: "";
+   display: block;
    height: 0;
-}
-.clearfix:after {
- clear: both;
- content: "";
- display: block;
- height: 0;
- visibility: hidden;
+   visibility: hidden;
 }
 .clearfix {
 	display: block;
@@ -150,10 +150,10 @@ header.header-fixed {
 	top: 0;
 	left: 0;
 	z-index: 99999;
-   height: 65px;
-   -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
-   -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
-   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+ height: 65px;
+ -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+ -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
 .logo{
 	float: left;
@@ -169,14 +169,15 @@ header.header-fixed .logo img {
     height: 65px;
 }
 .banner-section {
-   overflow: hidden;
-   clear: both;
-   position:relative;
+ overflow: hidden;
+ clear: both;
+ position:relative;
 }
 .sub-head,.sub-text{
 	font-family: 'Gotham Rounded Book';
 	left:200px !Important;
 }
+
 .banner-section:after {
     content: '';
     position: absolute;
@@ -188,7 +189,7 @@ header.header-fixed .logo img {
 }
 /*Our services section*/
 .our-services{
-    padding: 60px 0px;
+    padding: 60px 0px 0 0;
     position: relative;
     z-index: 99;
 
@@ -210,14 +211,14 @@ h3.theme-title span{
     display: block;
 }
 h3.theme-title:after {
-   content: '';
-   position: absolute;
-   width: 45px;
-   bottom: -15px;
-   z-index: 9;
-   background-color: #16a147;
-   height: 7px;
-   border-radius: 15px;
+ content: '';
+ position: absolute;
+ width: 45px;
+ bottom: -15px;
+ z-index: 9;
+ background-color: #16a147;
+ height: 7px;
+ border-radius: 15px;
 }
 .our-ser-left p{
 	font-size:18px;
@@ -229,24 +230,38 @@ h3.theme-title:after {
 }
 .ourser-list{
     float: left;
-    width: 50%;
+    width: 33.33%;
     padding-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 .ourser-list nth-last-child(even){
- padding-right:0px;
+   padding-right:0px;
 }
 .ourser-list img{
-   border-radius: 3px;
+ border-radius: 3px;
 }
 .ourser-list h4{
     margin: 10px 0px;
     font-size: 22px;
     color: #161718;
+    line-height: 30px;
+}
+.ourser-list h4 span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    background-color: #27ae61;
+    color: #fff;
+    text-align: center;
+    border-radius:50%; 
+    margin-right: 10px;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
 }
 .ourser-list p{
-   float: left;
-   width: 225px;
+ float: left;
+ width: 225px;
 }
 .ourser-list a{
 	color: #161718;
@@ -266,15 +281,20 @@ h3.theme-title:after {
 .other-ser-left{
     width: 35%;
     float: left;
-    padding-top: 40px;
+    padding-top: 20px;
     background: url(../images/oter-left-overly.png) repeat left bottom;
 }
 .other-ser-left h3{
     color: #fff;
-    margin-bottom: 72px;
-    padding-left: 40px;
+    margin-bottom: 23px;
+    padding-left: 0px;
+    font-size: 18px;
+    line-height: 30px;
+    padding-right: 10px;
 }
-.other-ser-left .img-fluid {
+.other-ser-left h3:after {
+ left:0;   }
+ .other-ser-left .img-fluid {
     max-width: 120%;
     margin-left: -24%;
 }
@@ -288,26 +308,28 @@ h3.theme-title:after {
     padding: 55px 55px 17px;
 }
 .other-ser-right ul{
-   width: 85%;
+ width: 85%;
 }
 .other-ser-right ul li{
-    float: left;
-    width: 33%;
-    margin-bottom: 54px;
+    display: inline-block;
+    width: 32%;
+    margin-bottom: 40px;
+    vertical-align: top;
 }
 .other-ser-right ul li img{
 	float:left;
 	margin-right:15px;
 }
-.other-ser-right ul li a{
+.other-ser-right ul li span {
     color: #000;
     text-decoration: inherit;
     font-family: 'Gotham Rounded Book';
 }
-.other-ser-right ul li a span{
+.other-ser-right ul li span{
     margin-top: 5px;
     display: block;
     margin-left: 60px;
+    line-height: 20px;
 }
 /*abt-sec css start*/
 .abt-sec{
@@ -323,8 +345,8 @@ h3.theme-title:after {
 	margin:25px 0px;
 }
 .abt-sec .col-md-4 img{
-   margin-bottom: 15px;
-   border-radius: 5px;
+ margin-bottom: 15px;
+ border-radius: 5px;
 }
 .abt-sec .col-md-4 p{
 	color:#666666;
@@ -357,7 +379,7 @@ h3.theme-title:after {
     margin-bottom: 10px;
 }
 .abt-sec .col-md-4:nth-child(2)  p{
-   min-height: 228px;
+ min-height: 228px;
 }
 .abt-sec .col-md-4 .vision{
 	background: url(../images/vision.jpg) #515b64  repeat left top;
@@ -474,14 +496,14 @@ h3.theme-title:after {
 
 /*Footer section*/
 .footer-section {
- /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f7747+0,2a5141+100,207cca+100,2f413f+100 */
- background: rgb(31,119,71); /* Old browsers */
- background: -moz-linear-gradient(left, rgb(31,119,71) 0%, rgb(42,81,65) 100%, rgb(32,124,202) 100%, rgb(47,65,63) 100%); /* FF3.6-15 */
- background: -webkit-linear-gradient(left, rgb(31,119,71) 0%,rgb(42,81,65) 100%,rgb(32,124,202) 100%,rgb(47,65,63) 100%); /* Chrome10-25,Safari5.1-6 */
- background: linear-gradient(to right, rgb(31,119,71) 0%,rgb(42,81,65) 100%,rgb(32,124,202) 100%,rgb(47,65,63) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f7747', endColorstr='#2f413f',GradientType=1 ); /* IE6-9 */
- padding:35px 0px 0px;
- margin-top: 60px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f7747+0,2a5141+100,207cca+100,2f413f+100 */
+   background: rgb(31,119,71); /* Old browsers */
+   background: -moz-linear-gradient(left, rgb(31,119,71) 0%, rgb(42,81,65) 100%, rgb(32,124,202) 100%, rgb(47,65,63) 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgb(31,119,71) 0%,rgb(42,81,65) 100%,rgb(32,124,202) 100%,rgb(47,65,63) 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgb(31,119,71) 0%,rgb(42,81,65) 100%,rgb(32,124,202) 100%,rgb(47,65,63) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f7747', endColorstr='#2f413f',GradientType=1 ); /* IE6-9 */
+   padding:35px 0px 0px;
+   margin-top: 60px;
 }
 .footer-bottom {
     margin-top: 70px;
@@ -543,8 +565,8 @@ h3.theme-title:after {
     margin-bottom: 15px;
 }
 .icon-set {
-   width: 150px;
-   margin: 0 auto;
+ width: 150px;
+ margin: 0 auto;
 }
 ul.icon-set li {
     float: left;
@@ -569,7 +591,7 @@ ul.icon-set li i.soc-fb {
   background-position: 3px 1px;
 }
 ul.icon-set li i.soc-twt {
-   background-position: -33px 1px;
+ background-position: -33px 1px;
 }
 ul.icon-set li i.soc-linkd {
     background-position: -69px 1px;
@@ -581,15 +603,15 @@ ul.icon-set li i.soc-yout {
 	background-color: #00000038;
 }
 .copyright p{
-   color: #fff;
-   text-align: center;
-   padding: 15px 0px;
-   font-family: 'Gotham Rounded Book';
+ color: #fff;
+ text-align: center;
+ padding: 15px 0px;
+ font-family: 'Gotham Rounded Book';
 }
 /*Inner Pages css start*/
 .inner-ban{
-	    height: 380px;
-		position:relative;
+   height: 380px;
+   position:relative;
 }
 .inner-ban h3{
 	transform: translate(-50%,-50%);
@@ -600,31 +622,31 @@ ul.icon-set li i.soc-yout {
     color: #fff;
     font-weight: 700;
     text-align: center;
-       opacity: 0.7;
+    opacity: 0.7;
 }
 .inner-content{
-	       padding: 50px 0px;
+    padding: 50px 0px;
 }
 .inner-content p{
 	font-size: 16px;
     font-family: 'Gotham Rounded Book';
     margin-bottom: 15px;
-    color: #666666;
-    line-height: 32px;
+    color: #444;
+    line-height: 30px;
 }
 .inner-left{
 	width:23%;
 	float:left;
-	}
+}
 .side-nav li a{
-     margin: 10px 0px;
-    border-bottom: 1px solid #cccccc;
-    color: #555555;
-    text-decoration: none;
-    padding: 2px 0px 10px 30px;
-    position: relative;
-    display: inline-block;
-    width: 100%;
+   margin: 10px 0px;
+   border-bottom: 1px solid #cccccc;
+   color: #555555;
+   text-decoration: none;
+   padding: 2px 0px 10px 30px;
+   position: relative;
+   display: inline-block;
+   width: 100%;
 }
 .side-nav li.active a{
 	color:#16a148;
@@ -643,15 +665,16 @@ ul.icon-set li i.soc-yout {
     background-position:0px 0px;
 }
 .dwld-broc{
-	    margin: 15px 0px;
+   margin: 15px 0px;
 }
-.dwld-broc h4{
-	font-size: 18px;
+.dwld-broc h4 {
+    font-size: 18px;
     color: #555555;
-    margin-left: 80px;
+    margin-left: 70px;
 }
 .dwld-broc img{
 	float:left;
+    height: 50px;
 }
 .inner-right{
 	width:70%;
@@ -710,7 +733,7 @@ ul.icon-set li i.soc-yout {
     padding: 30px 30px 30px 90px;
     margin-top: 30px;
     display: inline-block;
-	position:relative;
+    position:relative;
 }
 .our-values h4{
 	color:#333333;
@@ -747,7 +770,7 @@ ul.icon-set li i.soc-yout {
     border-radius:25px;
     font-size: 16px;
     color: #555555;
-	font-family: 'Gotham Rounded Book';
+    font-family: 'Gotham Rounded Book';
 }
 button.submit {
     width: 100%;
@@ -768,19 +791,19 @@ button.submit:hover{
 .cnct-lft textarea {
     resize: none;
     height: 150px;
-	padding: 10px;
+    padding: 10px;
 }
 .cntct-right{
-       width: 55%;
-    float: right;
-    background-color: #16a148;
-    height: 100%;
-    position: relative;
-    z-index: 99;
-    min-height: 530px;
+ width: 55%;
+ float: right;
+ background-color: #16a148;
+ height: 100%;
+ position: relative;
+ z-index: 99;
+ min-height: 530px;
 }
 .cntct-right .tab-content{
-	    padding: 30px;
+   padding: 30px;
 }
 .cntct-right:after{
     content: '';
@@ -791,7 +814,7 @@ button.submit:hover{
     left: 0px;
     top: 2px;
     position: absolute;
-	z-index:-9;
+    z-index:-9;
 }
 .cntct-right .nav{
     display: table;
@@ -810,32 +833,44 @@ button.submit:hover{
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-	 font-family: 'Gotham Rounded Book';
+    font-family: 'Gotham Rounded Book';
 }
 .cntct-right h3{
 	color: #fff;
     margin: 15px 0px;
-	position:relative;
-	padding-bottom: 15px;
+    position:relative;
+    padding-bottom: 15px;
 }
 .cntct-right h3:after{
-	    content: '';
-    position: absolute;
-    left: 0;
-    max-width: 100%;
-    width: 50px;
-    background-color: #29d366;
-    height: 5px;
-    bottom: 0px;
+   content: '';
+   position: absolute;
+   left: 0;
+   max-width: 100%;
+   width: 50px;
+   background-color: #29d366;
+   height: 5px;
+   bottom: 0px;
 }
 .cntct-right h6{
-	 color: #61f0d1;
-     margin-bottom: 10px;
-	 font-family: 'Gotham Rounded Book';
+  color: #61f0d1;
+  margin-bottom: 10px;
+  font-family: 'Gotham Rounded Book';
 }
 .cntct-right .tab-content p,.cntct-right .tab-content a{
 	color: #fff;
     line-height: 25px;
-	 font-family: 'Gotham Rounded Book';
+    font-family: 'Gotham Rounded Book';
 }
-.cntct-right .tab-content a{border-bottom:1px solid #fff;}
+.cntct-right .tab-content a{
+    border-bottom:1px solid #fff;
+}
+.ser-list ul {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.ser-list ul li {
+    font-size:14px;
+    margin-bottom:10px;
+    list-style: disc;
+    color:#333;
+}
