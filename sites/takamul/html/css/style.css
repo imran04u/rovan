@@ -194,6 +194,9 @@ header.header-fixed .logo img {
     z-index: 99;
 
 }
+.our-services p {
+    margin-bottom: 15px;
+}
 .our-ser-left {
     width: 30%;
     float: left;
