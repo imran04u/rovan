@@ -5,6 +5,7 @@ Author       :  Abul Azad
 Created On   : 07-03-2018
 --------------------------------------------------------------------------------*/
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @font-face {
     font-family: 'Gotham Rounded Book';
     src: url('../fonts/GothamRounded-Book.eot');
@@ -175,7 +176,7 @@ header.header-fixed .logo img {
 }
 .sub-head,.sub-text{
     font-family: 'Gotham Rounded Book';
-    left:200px !Important;
+    left:150px !important;
 }
 
 .banner-section:after {
@@ -189,7 +190,7 @@ header.header-fixed .logo img {
 }
 /*Our services section*/
 .our-services{
-    padding: 60px 0px 0 0;
+    padding: 30px 0px 0 0;
     position: relative;
     z-index: 99;
 
@@ -619,7 +620,7 @@ ul.icon-set li i.soc-yout {
 }
 /*Inner Pages css start*/
 .inner-ban{
-   height: 380px;
+   height: auto;
    position:relative;
 }
 .inner-ban h3{
@@ -634,7 +635,7 @@ ul.icon-set li i.soc-yout {
     opacity: 0.7;
 }
 .inner-content{
-    padding: 50px 0px;
+    padding: 30px 0px;
 }
 .inner-content p{
     font-size: 16px;
@@ -882,4 +883,10 @@ button.submit:hover{
     margin-bottom:10px;
     list-style: disc;
     color:#333;
+}
+.ls-bottom-nav-wrapper {
+	z-index:9999;
+}
+#map {
+	margin:20px 0 0 0;
 }
