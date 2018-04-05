@@ -1,0 +1,392 @@
+
+/** Responsive css code Start **/
+@media screen and (min-width: 1025px) {
+#burgernav {
+    display: none;
+}
+header nav {
+    float: right;
+    width:75%;
+}
+header nav .menu-sec {
+    float: right;
+    width:100%;
+}
+header nav .menu-sec ul {
+    float: right;
+    clear: both;
+}
+header nav ul>li {
+    float: left;
+    margin-right: 35px;
+    padding: 20px 0 0 0px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+}
+header nav ul>li:last-child {
+    margin-right: 0px;}
+    header nav a {
+        color: #666666;
+        transition-duration: 0.4s;
+        font-family: 'Roboto', sans-serif;
+    }
+    header nav .top-menu li{
+        padding-top: 5px;
+    }
+    header nav .top-menu a{
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 14px;
+        display: inline-block;
+    }
+    header nav .top-menu .active a,header nav .bottom-menu .active a{
+        color: #16a148;
+    }
+    header nav .top-menu li:after{
+        content: '|';
+        position: absolute;
+        top: 10px;
+        right: -20px;
+        -webkit-transition: width 0.5s;
+        -moz-transition: width 0.5s;
+        transition: width 0.5s;
+        color: #d9d9d9;
+    }
+	  header.header-fixed nav .top-menu li:after{
+        top: 0px;
+    }
+    header nav .top-menu li:last-child:after{
+        display:none;
+    }
+    header nav .top-menu .active a:after, header nav .bottom-menu .active a:after{
+        content: '';
+        border-bottom: 2px #16a148 solid;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        overflow: hidden;
+        max-width: 100%;
+        -webkit-transition: width 0.5s;
+        -moz-transition: width 0.5s;
+        transition: width 0.5s;
+        width: 100%;
+    }
+	header nav .bottom-menu .active a:after{
+	    top: auto;
+        bottom: -22px;
+	}
+	header.header-fixed nav .bottom-menu .active a:after {
+    bottom: -7px;
+    }
+    header nav .bottom-menu{
+        margin-top: 10px;
+    }
+    header nav .bottom-menu a{
+        font-family: 'Roboto Slab', serif;
+        font-size: 18px;
+        line-height: 18px;
+        display: inline-block;
+        color: #333;
+    }
+    header nav a:hover {
+        color: #16a148;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    header.header-fixed nav ul>li {
+        padding: 0;
+    }
+    header.header-fixed nav .bottom-menu a {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    header.header-fixed nav .top-menu a {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+
+}
+
+/*Responsive 1500*/
+@media screen and (max-width:1500px) {
+    .other-ser-left .right {
+        width: 75%;
+    }
+    .other-ser-right ul {
+        width: 100%;
+    }
+    .other-ser-left h3 {
+        margin-bottom: 15px;
+    }
+    .exp-list h3 {
+        font-size: 30px;
+    }
+	.inner-ban h3 {
+    font-size: 65px;
+}
+}
+
+/*Responsive 1366*/
+@media screen and (max-width:1366px) {
+    .other-ser-right {
+        padding: 30px 35px 15px;
+    }
+    .exp-list h3 {
+        font-size: 25px;
+    }
+	.our-values img {
+    left: -40%;
+    width: 50%;
+}
+}
+@media screen and (max-width:1280px) {
+    .other-ser-right ul li {
+        margin-bottom: 28px;
+    }
+    .other-ser-right {
+        padding: 55px 15px 37px;
+    }
+	.inner-ban {
+    height:auto;
+}
+}
+/*Responsive 1024*/ 
+@media screen and (max-width:1199px) {
+    header nav ul>li {
+        margin-right: 25px;
+    }
+    .banner-section:after {
+        background-size: contain;
+    }
+    .footer-menu ul li a {
+        font-size: 16px;
+    }
+    .exp-list h3 {
+        font-size: 20px;
+    }
+    .exp-list .hover-text {
+        padding: 10px;
+    }
+    .exp-list:hover.exp-list h3 {
+        left: 11px;
+    }
+    .exp-list .hover-text p {
+        padding-top: 51px;
+        font-size: 13px;
+    }
+    .abt-sec .col:nth-child(2) p {
+        min-height: 357px;
+    }
+	.inner-left {
+    width: 28%;
+}
+   .inner-right {
+    width: 68%;
+}
+}
+
+/*Responsive 1024*/ 
+@media screen and (max-width:1024px) {
+    .bottom-menu{
+        margin:0px -20px !important;
+    }
+    .top-menu{
+        margin-bottom:0px !important;
+    }
+    .exp-list:hover.exp-list a {
+        left: 10px;
+        bottom: 0px;
+        font-size: 13px;
+    }
+    #menu{
+        display:none;
+    }
+    nav#menu li {
+        margin-left: 0;
+    }
+    .header .logo {
+        left: 0;
+        margin-left: 0;
+        width: auto;
+        position: inherit;
+        float: left;
+    }
+    #burgernav {
+        display: block;
+    }
+    .header.header-fixed #burgernav {
+        top: 30px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    .header .logo img, .header.header-fixed .logo img {
+        margin: inherit;
+        width: 72%;
+    }
+    .header.header-fixed .logo img {
+        width: 50%;
+    }
+
+    .other-ser-left .right {
+        width: 100%;
+    }
+    .other-ser-left h3 {
+        margin-bottom: 139px;
+    }
+}
+
+/*Responsive 991*/  
+@media screen and (max-width: 991px) {
+    .our-ser-right,.other-ser-right {
+        width: 60%;
+    }
+    .our-ser-left {
+        width: 40%;
+    }
+    .other-ser-right ul li{
+        width: 50%;
+        min-height: 80px;
+    }
+    .other-ser-left .right img{position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: 40%;
+    }
+    .abt-sec .col-md-4:nth-child(2) p {
+        min-height: 550px;
+    }
+    .our-expe .col-md-3 {
+        width: 100%;
+        max-width: 50%;
+        flex: 0 0 50%;
+        margin-bottom: 15px;
+    }
+    header {
+        height: 65px;
+    }
+    .logo img {
+        height: 65px;
+    }
+	.inner-ban h3 {
+    font-size: 45px;
+}
+}
+
+/*Responsive 480*/ 
+@media screen and (max-width: 767px) {
+    .our-ser-left,.our-ser-right,.our-ser-right, .other-ser-right,.inner-left,.inner-right,.vision-mission div,.cnct-lft,.cntct-right {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+	.cnct-lft,.cntct-right{margin-bottom:0px;}
+    .other-ser-left{
+        width:100%;
+    }
+    .other-ser-left .right img {
+        position: inherit;
+        bottom: 0;
+        float: right;
+        width: auto;
+    }
+    .other-ser-left h3 {
+        margin-bottom: 25px;
+    }
+    .other-services{
+        background:transparent;
+    }
+    .abt-sec .col-md-4:nth-child(2) p {
+        min-height: auto;
+    }
+    .footer-menu,.footer-menu:last-child {
+        width: 48%;
+        padding: 0px 20px 0px 0px!important;
+    }
+    .footer-menu:nth-child(2):after{
+        display:none;
+    }
+    .our-expe .our-expe-top {
+        width: 100%;
+    }
+    .logo {
+        width: 40%;
+    }
+    header {
+        height: 65px;
+    }
+    .logo img {
+        height: 65px;
+    }
+    .sub-head,.sub-text{
+        left:10px !important
+    }
+	.our-values {
+    padding: 30px 30px 30px 30px;
+}
+.our-values img {
+    display: none;
+}
+}
+
+/*Responsive 360*/ 
+@media screen and (max-width:568px) {
+    .ourser-list {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .ourser-list img {
+        width: 100%;
+    }
+    .our-expe .col-md-3 {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+    }
+    .footer-menu, .footer-menu:last-child {
+         min-height: 320px;
+    }
+    .other-ser-right ul li {
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 15px;
+    }
+	.inner-ban h3 {
+    font-size: 30px;
+}
+.cntct-right .tab-content {
+    padding: 15px;
+}
+}
+
+/*Responsive 375*/ 
+@media screen and (max-width:375px) {
+    .footer-menu, .footer-menu:last-child {
+        min-height: auto;
+        width: 100%;
+    }
+    .footer-menu:after {
+        display:none;
+    }
+    .abt-sec h6 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .abt-sec {
+        padding: 15px 0px;
+    }
+	.inner-ban h3 {
+    font-size: 20px;
+}
+.cntct-right .nav li {
+    padding: 15px 10px;
+}
+}
