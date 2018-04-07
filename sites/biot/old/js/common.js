@@ -1,12 +1,10 @@
-
 // Mobile Menu
-if($(window).width() <= 1023){
+if($(window).width() <= 991){
  $("#menu").mmenu({
    "offCanvas": {
      "position": "right"
    }
  });
- 
 }
 
  // Header Fixed   
@@ -17,12 +15,6 @@ if($(window).width() <= 1023){
   }
   else if (height == 0) {
     $('header').removeClass('header-fixed');
-  }
-  if (height > 390) {
-    $('.submenu').addClass('submenu-fixed');
-  }
-  else if (height < 389) {
-    $('.submenu').removeClass('submenu-fixed');
   }
 });  
 
