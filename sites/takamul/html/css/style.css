@@ -151,10 +151,10 @@ header.header-fixed {
     top: 0;
     left: 0;
     z-index: 99999;
- height: 65px;
- -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
- -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
- box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    height: 65px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
 .logo{
     float: left;
@@ -501,13 +501,12 @@ h3.theme-title:after {
 
 /*Footer section*/
 .footer-section {
-   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f7747+0,2a5141+100,207cca+100,2f413f+100 */
    background: rgb(31,119,71); /* Old browsers */
    background: -moz-linear-gradient(left, rgb(31,119,71) 0%, rgb(42,81,65) 100%, rgb(32,124,202) 100%, rgb(47,65,63) 100%); /* FF3.6-15 */
    background: -webkit-linear-gradient(left, rgb(31,119,71) 0%,rgb(42,81,65) 100%,rgb(32,124,202) 100%,rgb(47,65,63) 100%); /* Chrome10-25,Safari5.1-6 */
    background: linear-gradient(to right, rgb(31,119,71) 0%,rgb(42,81,65) 100%,rgb(32,124,202) 100%,rgb(47,65,63) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f7747', endColorstr='#2f413f',GradientType=1 ); /* IE6-9 */
-   padding:35px 0px 0px;
+   padding:20px 0px;
    margin-top: 60px;
 }
 .footer-bottom {
@@ -561,6 +560,40 @@ h3.theme-title:after {
     display: block;
     font-weight: 300;
     text-decoration:inherit;
+}
+.footer-nav {
+    width: 200px;
+    float: left;
+}
+.footer-logo {
+    width: 50%;
+    float: right;
+}
+.footer-nav a {
+   display: block;
+   color: #fff;
+   text-transform: uppercase;
+   margin-bottom: 5px;
+   font-size: 14px;
+   text-decoration: none;
+}
+.footer-nav a:hover {
+   color: #5dec92;
+}
+.footer-logo img {
+    float: right;
+    height: 80px;
+}
+.footer-logo p {
+    display: block;
+    width: 100%;
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 20px;
+        font-family: 'Gotham Rounded Book';
 }
 .social-sec {
     clear: both;
@@ -885,10 +918,10 @@ button.submit:hover{
     color:#333;
 }
 .ls-bottom-nav-wrapper {
-	z-index:9999;
+    z-index:9999;
 }
 #map {
-	margin:20px 0 0 0;
+    margin:20px 0 -70px 0;
 }
 .client-list {
     width: 100%;
@@ -906,4 +939,180 @@ button.submit:hover{
 .client-list li img{
     width: 100%;
     padding:20px; 
+}
+.our-services .col25 {
+    width: 25%;
+    float: left;
+    background-color: #f7f7f7;
+    height: 522px;
+}
+.our-services .col25 img {
+    width: 100%;
+}
+.our-services .col25 h2 {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 15px;
+    background-color: #343839;
+    font-family: 'Roboto', sans-serif;
+}
+.our-services .col25:nth-child(even) h2 {
+    background-color: #14a043;
+}
+.our-services .col25 p {
+ font-size: 14px;
+ line-height: 24px;
+ color: #333;
+ font-weight: 500;
+ padding: 5px 15px;
+}
+.our-services .col25:nth-child(odd)  {
+    background-color: #eaeaea;
+}
+.servicesBlk {
+    margin-top: 70px;
+}
+.projlist {
+    background-color: rgba(0,0,0,.07);
+}
+.projlist img {
+   width: 100%;
+} 
+.projlist h2 {
+   background-color: rgba(0,0,0,.1);
+   padding:10px 20px;
+   font-size: 18px;
+   text-align: center;
+   color: #000;
+   text-decoration: none;
+}
+.projlist a {
+   text-decoration: none;
+}
+
+#waterfall { margin: 10px; }
+
+#waterfall li {
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+#waterfall li.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s, top 1s;
+}
+
+#waterfall li > div {
+  color: rgba(0,0,0,0.6);
+  font-size: 32px;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 0px;
+  background: rgb(255,255,255);
+  border: 1px solid rgba(038, 191, 64, 0);
+  transition: all 0.5s;
+}
+
+#waterfall li > div:hover {
+  transform: translateY(-10px);
+  border: 1px solid rgba(038, 191, 64, 1);
+  box-shadow: 0 10px 15px rgba(038, 191, 64, 0.1);
+  transition: all 0.3s;
+}
+dl dt {
+    color: #222;
+    font-size: 13px;
+}
+dl dd {
+    color: #444;
+    font-family: 'Gotham Rounded Book';
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+dl dd img {
+    height: 100px;
+    margin-bottom: 10px;
+    display: block;
+}
+.projWrap ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+.projWrap ul li {
+    margin-bottom:6px;
+}
+.projban {
+    margin:30px 0;
+    position: relative;
+}
+.projban.owl-carousel .owl-nav .owl-next, .projban.owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
+    display: block; 
+    font-size: 0;
+    -moz-transition: all .300s ease-in-out;
+    -webkit-transition: all .3200s ease-in-out;
+    transition: all .300s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.projban.owl-carousel .owl-nav .owl-next {
+    right: -30px;
+    background: rgba(0,0,0,.7) url(../images/icons/right-arrow.png) no-repeat center center;
+}
+.projban.owl-carousel .owl-nav .owl-prev {
+    left: -30px;
+    background: rgba(0,0,0,.7) url(../images/icons/left-arrow.png) no-repeat center center;
+
+}
+.projban.owl-carousel:hover .owl-nav .owl-next {
+    right: 0px;
+    opacity: 1;
+    visibility: visible;
+}
+.projban.owl-carousel:hover .owl-nav .owl-prev {
+    left: 0px;
+    opacity: 1;
+    visibility: visible;
+}
+.halfimg {
+    width: 50%;
+    margin: 30px 0;
+}
+.newsblk .row {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px #ddd solid;
+}
+.newsblk img {
+    width: 100%;
+}
+.newsblk h5 {
+        font-size: 13px;
+    margin-bottom: 4px;
+    font-weight: 400;
+    color: #666;
+}
+.newsblk h4 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+}
+.newsblk h4:before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    bottom: -15px;
+    height: 3px;
+    background-color: #16a147;
 }
