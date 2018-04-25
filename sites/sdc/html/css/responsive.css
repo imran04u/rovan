@@ -1,0 +1,104 @@
+
+@media screen and (min-width: 1025px) {
+  nav#menu {float: right;padding: 30px 0;position: relative;}
+  nav#menu li {float: left;}
+  nav#menu ul > li a {color: #fff;font-size: 14px;padding-bottom: 6px; position: relative; font-weight: 500;margin-left: 25px;
+    text-transform: uppercase; padding: 5px 15px; border-radius: 15px;}
+  nav#menu li:last-child a{ background-color: #8abbd6; padding: 5px 15px;border-radius: 15px;}
+  nav#menu li:last-child a:hover{background:#c62526;color:#fff;}
+  nav#menu ul >li:hover > a, nav#menu ul >li.active a {color: #fff; background-color: #ce4729;border-radius: 15px;}
+}
+@media screen and (max-width: 1500px) {
+.think-digital .view-ser {top: -180px;left: 235px;width: 150px;
+}
+}
+@media screen and (max-width: 1366px) {
+nav#menu ul > li a { margin-left: 15px;}
+}
+@media screen and (max-width: 1300px) {
+#wowslider-container1 .ws-title { top: 120px;}
+}
+@media screen and (max-width: 1199px) {
+ nav#menu ul > li a { margin-left: 3px;}
+ #wowslider-container1 .ws-title {top: 80px;}
+ #wowslider-container1 .ws-title h1 {font-size: 38px;line-height: 45px;}
+ #wowslider-container1 .ws-title h3 {line-height: 25px;}
+ .think-digital .view-ser {top: -135px;}
+ .port-folio .grid:nth-child(3) { margin-top: -175px;}
+ .port-folio .grid:nth-child(1) { margin-bottom: 0px;}
+ .port-folio .grid { margin-bottom: 85px;}
+ .header-fixed .logo img {width: 60%;}
+ .port-folio {margin-top: 95px;}
+ .think-digital ul li:after {width: 120px;background-size: 95%;}
+}
+@media screen and (max-width: 1024px) {
+#burgernav{display: block;}
+nav#menu li {margin-left: 0;}
+.footerNav.navSblk { width: 26%;float: left;}
+.inner-banner-details {top: 15px;bottom: inherit; }
+.bancount img {width: 60px !important;}
+.bancount p{font-size:18px;}
+ nav#menu li.active a{color: #e31f26;}
+#menu{display: none;}
+}
+@media screen and (max-width: 991px) {
+ #wowslider-container1 .ws-title {padding: 0px;}
+.think-digital .view-ser { top: -110px;left: 150px;}
+.digi-right {width: 60%;margin-top: -30px;}
+.digi-left {width: 40%;margin-top: -30px;}
+.think-digital ul li:after {width: 70px;background-size: 100%;}
+.skew-style { -ms-transform: skewY(40deg); -webkit-transform: skewY(40deg);transform: skewY(40deg);}
+.port-folio .grid:nth-child(1) {margin-bottom:15px;width: 100%;}
+.port-folio .grid:nth-child(2) {width:50%;}
+.port-folio .grid {margin-bottom: 15px;}
+.port-folio .grid:nth-child(3) {margin-top: -8px;}
+.footer .footer-menu {width: 100%;}
+}
+@media screen and (max-width: 767px) {
+header .col-md-3{width:30%;}
+header .col-md-9{width:70%;}
+#wowslider-container1 .ws-title { padding: 0px;left: 3%;width: 50%;    top: 110px;}
+#wowslider-container1 .ws-title h1 {font-size: 20px;line-height: 25px;}
+.digi-left,.digi-right {width: 100%;margin-top: 0;
+}
+.think-digital .view-ser {top: -130px;left: 99px;width: 130px; padding: 20px 10px 10px;}
+.think-digital ul li:after {width: 40px;}
+.our-services { margin-top: -823px;}
+.our-services .ser-acc-list p { width: 100%;}
+.our-services .ser-acc-list .ser-img {top: 0;position: inherit;width: 100%;}
+.our-services .ser-acc-list .ser-img img{width: 50%;margin: 0 auto;display: block;}
+.our-services .ser-acc-list .ser-ans.show:after {display:none;}
+.port-folio .grid:nth-child(3) {margin-top: 7px;}
+.think-digital {z-index: 9999; position: relative;}
+.skew-style {margin-top: 30px;-ms-transform: skewY(30deg);-webkit-transform: skewY(30deg);transform: skewY(30deg);}
+.port-folio .grid {padding: 0px 5px 0px;}
+}
+@media screen and (max-width:568px) {
+.footer .footer-menu li { display: inherit; width: 100%;margin-bottom: 15px;}
+.footer .footer-menu li a { width: 100%;text-align: center;}
+.footer .footer-menu { margin: 0px auto 0px;}
+.footer-right {float: left;margin-top: 20px;margin-left: 20px;}
+#wowslider-container1 .ws-title {top: 80px;}
+#wowslider-container1 .ws-title h1 {font-size: 16px;line-height: 20px;}
+.think-digital .view-ser {top: -115px;left:95px;width: 115px;}
+.header-fixed .logo img { width: 80%;}
+.think-digital ul li img {width: 60%;}
+.think-digital ul li:after {width: 15px;top: 20px;}
+.think-digital ul li h3 {font-size: 13px; padding-left: 0px;margin-top: 0px;}
+.think-digital ul { margin: 0px 0px;}
+.gold-line,.blue-after {display: none;}
+.our-services { margin-top: -775px;}
+}
+@media screen and (max-width:480px) {
+  #wowslider-container1 .ws-title {top: 45px;}
+  .think-digital .view-ser {top: -95px;left: 55px;}
+}
+@media screen and (max-width:375px) {
+.port-folio .grid:nth-child(3) { margin-top: 4px;}
+.projects h3 span {font-size: 25px;}
+.think-digital .view-ser {top: -75px;padding: 5px 10px 5px;}
+.footer-left p { font-size: 15px;}
+.header-fixed .logo img { width: 100%;}
+.port-folio .sub-head span {font-size: 36px;}
+  #wowslider-container1 .ws-title {top: 30px;}
+}  
