@@ -1,0 +1,436 @@
+/* ------------------------------------------------------------------------------ 
+Project Name : Linga Farm 
+Description : Main Style Sheet 
+Author : Imran Rovan 
+Created On : 18 Apr 2018 
+--------------------------------------------------------------------------------*/
+
+/** Google Fonts **/
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700');
+
+@font-face {
+  font-family: "Carnas Light";
+  src: url("../fonts/Carnas-Light.otf") format("opentype");
+  url('../fonts/Carnas-Light.woff') format('woff');
+  font-weight: light;
+  font-style: normal;
+}
+
+/*  Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+ol, ul {
+  list-style: none;
+}
+img {
+  display: block;
+  outline: none;
+}
+img, input, textarea, button, select {
+  border: 0;
+  outline: 0 !important;
+  resize: none;
+}
+a, a:hover, a:focus {
+  text-decoration: none;
+  -moz-transition: all .200s ease-in-out;
+  -webkit-transition: all .200s ease-in-out;
+  transition: all .200s ease-in-out;
+}
+.clear {
+  clear: both;
+  font-size: 0;
+  height: 0;
+}
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
+li.clearfix {
+  display: list-item;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body, p, a, li, span, div {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Theme */
+body {
+  color: #000;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  -ms-overflow-style: scrollbar;
+}
+.login-container{
+  position: relative;
+  width: 600px;
+  margin: 150px auto;
+  padding: 90px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+.avatar {
+  text-align: center;
+}
+.avatar img {
+  margin-bottom: 30px;
+  max-width: 220px;
+  display:inline-block;
+}
+
+
+.login-container::before,.login-container::after{
+  content: "";
+  position: absolute;
+  width: 100%;height: 100%;
+  top: 3.5px;left: 0;
+  background: #fff;
+  z-index: -1;
+  -webkit-transform: rotateZ(4deg);
+  -moz-transform: rotateZ(4deg);
+  -ms-transform: rotateZ(4deg);
+  border: 1px solid #ccc;
+
+}
+
+.login-container::after{
+  top: 5px;
+  z-index: -2;
+  -webkit-transform: rotateZ(-2deg);
+  -moz-transform: rotateZ(-2deg);
+  -ms-transform: rotateZ(-2deg);
+
+}
+
+
+.form-box input{
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  height:45px;
+  border: 1px solid #ccc;;
+  background: #fff;
+  font-size: 16px;
+  transition:0.2s ease-in-out;
+  margin-bottom: 20px;
+  padding-left: 45px;
+}
+
+
+.error {
+  font-size: 13px;
+  color: red;
+  margin:3px 0;
+}
+.form-box input:focus{
+  outline: 0;
+  background: #eee;
+}
+
+.form-box input[type="text"]{
+  border-radius: 5px 5px 0 0;
+  text-transform: lowercase;
+}
+.form-box .input {
+  position: relative;
+}
+.form-box .input span {
+  font-size: 27px;
+  display: block;
+  font-weight: 500;
+  color: #888888;
+  position: absolute;
+  top: 8px;
+  left: 13px;
+}
+.form-box input[type="password"]{
+  border-radius: 0 0 5px 5px;
+}
+
+.form-box button.login{
+  margin-top:15px;
+  background-color: #1071c1;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 10px 35px;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.form {
+  padding: 120px 0 0 0;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto; 
+}
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+  color: #222;
+  text-align: center;
+  text-transform: capitalize;
+}
+h2 span {
+  color: #e2000f;
+}
+.intro {
+  color: #222;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 500px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.form input {
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  background: #fff;
+  padding: 10px 20px;
+  color: #b5b5b5;
+  margin-bottom: 30px;
+  border-radius: 0px;
+}
+.form textarea {
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  background: #fff;
+  padding: 18px 20px;
+  color: #b5b5b5;
+  margin-bottom: 30px;
+  border-radius: 0px;
+  height: 120px;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.half {
+  flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  max-width: 50%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.full {
+  flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  max-width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.default_divider {
+  width: 70px;
+  margin: 20px auto;
+  margin-bottom: 40px;
+  border-top-color: #6d6d6d !important;
+}
+.row label {
+ font-size: 14px;
+ color: #333;
+ font-weight: 500;
+ display: block;
+ max-width: 100%;
+ margin-bottom: 0px;
+}
+.row label span {
+ font-size: 12px;
+ color: red;
+}
+.form_class {
+  padding: 20px;
+  background-color: #fff;
+  border:1px #fcfcfc solid;
+  border-radius: 8px;
+}
+.radio {
+ padding-left: 20px;
+ display: inline-block;
+ margin-right: 15px;
+}
+.radio label {
+ display: inline-block;
+ position: relative;
+ padding-left: 5px;
+}
+.radio label::before {
+ content: "";
+ display: inline-block;
+ position: absolute;
+ width: 17px;
+ height: 17px;
+ left: 0;
+ margin-left: -20px;
+ border: 1px solid #cccccc;
+ border-radius: 50%;
+ background-color: #fff;
+ -webkit-transition: border 0.15s ease-in-out;
+ -o-transition: border 0.15s ease-in-out;
+ transition: border 0.15s ease-in-out;
+}
+.radio label::after {
+ display: inline-block;
+ position: absolute;
+ content: " ";
+ width: 11px;
+ height: 11px;
+ left: 3px;
+ top: 3px;
+ margin-left: -20px;
+ border-radius: 50%;
+ background-color: #555555;
+ -webkit-transform: scale(0, 0);
+ -ms-transform: scale(0, 0);
+ -o-transform: scale(0, 0);
+ transform: scale(0, 0);
+ -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+ -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+ -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+ transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+.radio input[type="radio"] {
+ opacity: 0;
+ padding: 0;
+ margin: 0;
+}
+.radio input[type="radio"]:focus + label::before {
+ outline: thin dotted;
+ outline: 5px auto -webkit-focus-ring-color;
+ outline-offset: -2px;
+}
+.radio input[type="radio"]:checked + label::after {
+ -webkit-transform: scale(1, 1);
+ -ms-transform: scale(1, 1);
+ -o-transform: scale(1, 1);
+ transform: scale(1, 1);
+}
+.radio input[type="radio"]:disabled + label {
+ opacity: 0.65;
+}
+.radio input[type="radio"]:disabled + label::before {
+ cursor: not-allowed;
+}
+.radio.radio-inline {
+ margin-top: 0;
+}
+.radio-primary input[type="radio"] + label::after {
+ background-color: #428bca;
+}
+.radio-primary input[type="radio"]:checked + label::before {
+ border-color: #428bca;
+}
+.radio-primary input[type="radio"]:checked + label::after {
+ background-color: #428bca;
+}
+
+.mtop25 {
+  margin-top: 25px;
+}
+
+
+@media screen and  (max-width: 600px) {
+  .login-container {
+    position: relative;
+    width: 80%;
+    margin: 80px auto;
+    padding: 30px 20px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+  }
+  .half {
+  flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  max-width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.container {
+  width: 85%;
+  margin: 0 auto; 
+}
+.form {
+    padding: 10px 0 0 0;
+}
+h2, hr {
+  display: none
+}
+}
