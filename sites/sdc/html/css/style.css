@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700');
+/* ------------------------------------------------------------------------------
 
+    Project Name : SDC
+    Description  : Main Style Sheet
+    Author       : Abul Azad,Imran Rovan
+    Created On   : 23-04-2018
+    --------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700');
 @font-face {
 	font-family: "Carnas Light";
 	src: url("../fonts/Carnas-Light.otf") format("opentype");
@@ -16,7 +22,7 @@
 	font-style: normal;
 }
 
-body {font-family: 'Fira Sans', sans-serif; font-weight: 400; font-style: normal; font-size: 14px; line-height: 24px; color: #666666; }
+body {font-family: 'Fira Sans', sans-serif; font-weight: 400; font-style: normal; font-size: 14px; line-height: 24px; color: #666666; background-color: #fff;}
 a, .button { transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; color: #333333; }
 a:focus { text-decoration: none !important; }
 a:focus, a:hover { color: #4ac4f3; text-decoration: none !important; }
@@ -63,11 +69,13 @@ label { font-size: 15px; font-weight: 400; color: #aaaaaa; }
                                 Div Shadow
 -----------------------------------------------------------------------*/
 section{padding:30px 0px 0px;}
-.blue-head{color:#0194b1;font-size:16px;    text-transform: uppercase;}
+.blue-head,.blue-head-light{color:#0194b1;font-size:16px;text-transform: uppercase;}
+.blue-head-light{font-family: "Carnas Light"; font-size: 20px;}
+.blue-head-light span{color:#0a399f;}
 .sub-head{font-size: 30px;line-height: 40px;font-family: "Carnas Light";}
 .digi-left .sub-head{font-size: 35px; line-height: 45px;}
 /*header section*/
-header{position: fixed;width: 100%;z-index: 9999;padding: 15px 0px;}
+header{position: fixed;width: 100%;z-index: 99999;padding: 15px 0px;}
 .header-fixed{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#abafcd+0,71aec5+50,207cca+100,579bcb+100 */
 background: rgb(171,175,205); /* Old browsers */
@@ -96,7 +104,7 @@ header .logo img {-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ea
 .digi-right p{margin-bottom: 20px;}
 .think-digital ul{clear: both;display: inline-table;width: 100%;margin: 50px 0px;}
 .think-digital ul li{position: relative;float: left;width: 25%;;}
-.think-digital ul li:after{content: '';position: absolute;background: url(../images/icons/dots.png) no-repeat left bottom;top: 40px;width: 150px;height: 6;   z-index: -99;right: 10px;}
+.think-digital ul li:after{content: '';position: absolute;background: url(../images/icons/dots.png) no-repeat left bottom;top: 40px;width: 150px;height: 6px;   right: 10px;}
 .think-digital ul li:last-child img{margin: 0 auto;}
 .think-digital ul li:last-child:after{background:none;}
 .think-digital ul li h3{font-size: 18px;color: #333333;padding-left: 10px;margin-top: 20px;text-transform: uppercase;}
@@ -140,7 +148,7 @@ header .logo img {-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ea
 .projects a{background-color: #c52526;padding: 12px 40px;border-radius: 60px;color: #fff;text-transform: uppercase;}
 
 /*footer css*/
- .footer{padding:25px 0px;} 
+ .footer{padding:25px 0px;    background-color: #fafafa;} 
  .footer .footer-menu{width: 100%;margin: 0px auto 30px;display: block;}
  .footer .footer-menu li{display: block;width: 100%;text-align: center;}
  .footer .footer-menu li a{color:#000;display: inline-block;text-transform: uppercase;padding: 0 20px;}
@@ -155,6 +163,54 @@ header .logo img {-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ea
  .footer-right .fter-bot a,.footer-right .fter-bot p{text-align:right;margin-bottom: 10px;display:block;}
  .footer-right .fter-bot img{margin-left:10px;}
 
+
+ /*Inner Pages Css start*/
+.inner-ban{position:relative;}
+.inner-ban:after{content: ''; position: absolute;background: url(../images/banner-after.png) no-repeat left bottom;bottom: 0px; width: 100%;height: 240px;}
+.inner-ban h3{ transform: translate(-50%,-50%); position: absolute;top: 40%;left: 50%;font-size: 90px;color: #ffffffbf;text-align: center;}
+.inner-content .sub-head{width: 540px;margin: 0 auto;text-align: center;position: relative;margin-top:-30px;}
+.sub-head-bold{    font-size:25px;line-height: 30px;font-family: "Carnas Light";}
+
+/*About Us css*/
+.abt-left{float:left;width:35%;}
+.abt-right{float:right;width:60%;}
+.inner-content .think-digital ul { width: 80%;background-color: #fff;-webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.08);
+   -moz-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.08); box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.08);padding: 25px 25px 10px;margin-top: -90px;}
+.inner-content .think-digital ul li:after {width: 135px;right: -10px;background-size: 80%;}
+.vision-mission{margin: 20px 0px}
+.vision-mission div{width:50%;float:left;text-align:center;}
+.vision-mission div.vsn-left{border-right:1px solid #b2b2b2;}
+.vision-mission div h3{color: #0194b1;font-family: "Carnas Light";font-size: 20px; text-transform: uppercase;}
+.vision-mission div p{width: 70%;margin: 20px auto;}
+.our-values{ margin: 60px 0px;}
+.values-left{width:35%;float:left;}
+.values-right{width:65%;float:left;border: 5px solid #44a14a;padding: 25px 25px 25px 90px;}
+.our-values h4{color: #333333;font-size: 15px;margin: 3px 0px;}
+.our-values img{position: relative;top: 170px;right: -70px;}
+
+/*Product css start*/
+.product-sec{margin:30px 0px;position: relative; padding-bottom: 40px;}
+.product-left{float:left;width:60%;margin-top: -75px;}
+.product-right{    position: absolute;right: 0px;top: 0px;width: 40%;}
+.product-left ul li{    margin: 0 0 10px; color: #191919;font-size: 14px;line-height: 25px;position: relative;padding-left:20px;}
+.product-left ul li:after{content: ''; background: #e16636; width: 6px;height: 6px;position: absolute;border-radius: 25px;left: 0px;top: 10px;}
+.busines-sec{background-color: #f8f8f8;font-family: "Carnas Light";padding: 20px 0px;}
+.busines-sec h6{font-family: "Carnas Light";width:500px;}
+.busines-sec .col-md-4{text-align: center;margin:20px 0px;padding: 10px;}
+.busines-sec .col-md-4 h5{font-family: "Carnas Light";margin: 5px 0px;}
+.busines-sec .col-md-4:hover{-webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.08);-moz-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.08);
+         box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.08);background-color:#fff;}
+.develop-sec{margin:30px 0px;}
+.develop-sec .blue-head-light{text-align:center;margin-bottom: 15px;}
+.develop-sec ul li{float:left;width:25%;}
+.develop-sec ul li h5{font-family: "Carnas Light";margin: 10px 0px 5px 5px;text-transform: uppercase;}
+.develop-sec ul li p{margin-left: 5px;padding-right: 10px;}
+.develop-sec ul li:nth-child(5),.develop-sec ul li:nth-child(8){background: url(../images/develop/line-gradient.jpg) no-repeat left bottom;width: 100%;
+      height: 6px;margin: 25px 0px;}
+.develop-sec ul li:nth-child(8){background: url(../images/develop/line-gradient-1.jpg) no-repeat left bottom;}
+.develop-sec ul li:nth-child(6),.develop-sec ul li:nth-child(7){width:50%;margin:20px 0px;}
+.inner-project h3{margin: 15px 0px 20px;}
+.inner-project p{    color: #fff; width: 500px;margin: 30px auto;}
 
   
 

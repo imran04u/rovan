@@ -5,8 +5,8 @@
   nav#menu ul > li a {color: #fff;font-size: 14px;padding-bottom: 6px; position: relative; font-weight: 500;margin-left: 25px;
     text-transform: uppercase; padding: 5px 15px; border-radius: 15px;}
   nav#menu li:last-child a{ background-color: #8abbd6; padding: 5px 15px;border-radius: 15px;}
-  nav#menu li:last-child a:hover{background:#c62526;color:#fff;}
-  nav#menu ul >li:hover > a, nav#menu ul >li.active a {color: #fff; background-color: #ce4729;border-radius: 15px;}
+  nav#menu li:last-child a:hover{background-color: #233286;color:#fff;}
+  nav#menu ul >li:hover > a, nav#menu ul >li.active a {color: #fff;background-color: #233286;border-radius: 15px;}
 }
 @media screen and (max-width: 1500px) {
 .think-digital .view-ser {top: -180px;left: 235px;width: 150px;
@@ -14,9 +14,12 @@
 }
 @media screen and (max-width: 1366px) {
 nav#menu ul > li a { margin-left: 15px;}
+.product-left {margin-top: -55px;}
 }
 @media screen and (max-width: 1300px) {
 #wowslider-container1 .ws-title { top: 120px;}
+.inner-ban h3 {font-size: 75px;}
+.product-left {margin-top: -20px;}
 }
 @media screen and (max-width: 1199px) {
  nav#menu ul > li a { margin-left: 3px;}
@@ -30,6 +33,11 @@ nav#menu ul > li a { margin-left: 15px;}
  .header-fixed .logo img {width: 60%;}
  .port-folio {margin-top: 95px;}
  .think-digital ul li:after {width: 120px;background-size: 95%;}
+ /*Innerpages responsive*/
+ .inner-ban:after { bottom: -100px;}
+ .inner-content .sub-head {margin-top: 20px;}
+ .inner-content .think-digital ul li:after {width: 100px;}
+ .product-left {margin-top: 50px;}
 }
 @media screen and (max-width: 1024px) {
 #burgernav{display: block;}
@@ -40,6 +48,7 @@ nav#menu li {margin-left: 0;}
 .bancount p{font-size:18px;}
  nav#menu li.active a{color: #e31f26;}
 #menu{display: none;}
+ /*Innerpages responsive*/
 }
 @media screen and (max-width: 991px) {
  #wowslider-container1 .ws-title {padding: 0px;}
@@ -53,14 +62,21 @@ nav#menu li {margin-left: 0;}
 .port-folio .grid {margin-bottom: 15px;}
 .port-folio .grid:nth-child(3) {margin-top: -8px;}
 .footer .footer-menu {width: 100%;}
+/*Innerpages responsive*/
+.inner-ban:after {bottom: -135px;}
+.inner-content .sub-head { margin-top: 95px;}
+.abt-left {width: 100%;}
+.abt-right {width: 50%;}
+.inner-content .think-digital ul {width: 95%;}
+.inner-content .think-digital ul li:after {width: 80px;}
+.product-left {margin-top: 85px;}
 }
 @media screen and (max-width: 767px) {
 header .col-md-3{width:30%;}
 header .col-md-9{width:70%;}
 #wowslider-container1 .ws-title { padding: 0px;left: 3%;width: 50%;    top: 110px;}
 #wowslider-container1 .ws-title h1 {font-size: 20px;line-height: 25px;}
-.digi-left,.digi-right {width: 100%;margin-top: 0;
-}
+.digi-left,.digi-right {width: 100%;margin-top: 0;padding-left: 0px;}
 .think-digital .view-ser {top: -130px;left: 99px;width: 130px; padding: 20px 10px 10px;}
 .think-digital ul li:after {width: 40px;}
 .our-services { margin-top: -823px;}
@@ -72,6 +88,17 @@ header .col-md-9{width:70%;}
 .think-digital {z-index: 9999; position: relative;}
 .skew-style {margin-top: 30px;-ms-transform: skewY(30deg);-webkit-transform: skewY(30deg);transform: skewY(30deg);}
 .port-folio .grid {padding: 0px 5px 0px;}
+/*Innerpages responsive*/
+.inner-content .sub-head {margin-top:15px;}
+.our-values img,.inner-content .think-digital ul li:after,.inner-ban:after {display: none;}
+.values-right { width: 100%; padding: 25px;}
+.inner-ban h3 {font-size: 40px;top: 50%;}
+.product-left {margin-top: 0px;}
+.product-left { width: 100%;padding-bottom: 90px;}
+.busines-sec .col-md-4 { margin: 0px 0px;}
+.product-right {top: auto;bottom: 0;}
+.develop-sec ul li {width: 50%; min-height: 395px;}
+.develop-sec ul li:nth-child(5), .develop-sec ul li:nth-child(8),.develop-sec ul li:nth-child(6), .develop-sec ul li:nth-child(7) {  min-height: auto;}
 }
 @media screen and (max-width:568px) {
 .footer .footer-menu li { display: inherit; width: 100%;margin-bottom: 15px;}
@@ -88,17 +115,28 @@ header .col-md-9{width:70%;}
 .think-digital ul { margin: 0px 0px;}
 .gold-line,.blue-after {display: none;}
 .our-services { margin-top: -775px;}
+/*Innerpages responsive*/
+.inner-content .sub-head,.vision-mission div {width: 100%;}
+.vision-mission div.vsn-left { border-right:0;}
+.our-values { margin: 30px 0px;}
+.inner-project p,.busines-sec h6 { width: 100%;}
 }
 @media screen and (max-width:480px) {
   #wowslider-container1 .ws-title {top: 45px;}
   .think-digital .view-ser {top: -95px;left: 55px;}
+   /*Innerpages responsive*/
 }
 @media screen and (max-width:375px) {
-.port-folio .grid:nth-child(3) { margin-top: 4px;}
+.port-folio .grid:nth-child(3) { margin-top: 5px;}
 .projects h3 span {font-size: 25px;}
 .think-digital .view-ser {top: -75px;padding: 5px 10px 5px;}
 .footer-left p { font-size: 15px;}
 .header-fixed .logo img { width: 100%;}
 .port-folio .sub-head span {font-size: 36px;}
-  #wowslider-container1 .ws-title {top: 30px;}
+#wowslider-container1 .ws-title {top: 30px;}
+/*Innerpages responsive*/
+.inner-ban h3 {font-size: 30px;}
+.inner-content .think-digital ul {margin-top: -40px;}
+.develop-sec ul li {width: 100% !important;}
+.product-left {padding-bottom: 10px;}
 }  
