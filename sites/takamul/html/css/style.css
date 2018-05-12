@@ -204,11 +204,11 @@ header.header-fixed .logo img {
     margin-top: 40px;
 }
 h3.theme-title{
-    font-size: 32px;
-    color: #343839;
-    line-height: 45px;
-    margin-bottom:35px;
+    margin-bottom:45px;
     position: relative;
+    font-size: 23px !important;
+    font-family: 'Roboto Slab', serif !important;
+    line-height: 35px !important;
 }
 h3.theme-title span{
     font-size: 50px;
@@ -593,7 +593,7 @@ h3.theme-title:after {
     font-weight: 400;
     text-align: right;
     margin-top: 20px;
-        font-family: 'Gotham Rounded Book';
+    font-family: 'Gotham Rounded Book';
 }
 .social-sec {
     clear: both;
@@ -661,7 +661,7 @@ ul.icon-set li i.soc-yout {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 100px;
+    font-size: 90px;
     color: #fff;
     font-weight: 700;
     text-align: center;
@@ -690,6 +690,7 @@ ul.icon-set li i.soc-yout {
    position: relative;
    display: inline-block;
    width: 100%;
+   font-size: 15px;
 }
 .side-nav li.active a{
     color:#16a148;
@@ -940,26 +941,113 @@ button.submit:hover{
     width: 100%;
     padding:20px; 
 }
-.our-services .col25 {
-    width: 25%;
-    float: left;
-    background-color: #f7f7f7;
-    height: 522px;
+/* Services */
+.gridder-list:nth-child(n){
+    width: 32%;
+    margin-bottom: 0;
+    margin-top: 1%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
 }
-.our-services .col25 img {
+.gridder-list img {
+    width:100%;
+}
+.gridder-show {
+    background-color: #eee;
+    padding: 25px;
+    width: 99%;
+    border: 5px solid #16a148;
+}
+.gridder-list h2 {
+  font-size: 17px;
+  color: #fff;
+  font-weight: 500;  
+  padding: 0 20px;  
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gridder-list:before {
+    content: '';
     width: 100%;
-}
-.our-services .col25 h2 {
-    font-size: 17px;
-    color: #fff;
-    font-weight: 500;
-    padding: 10px 15px;
+    height: 100%;
     background-color: #343839;
-    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
 }
-.our-services .col25:nth-child(even) h2 {
-    background-color: #14a043;
+.gridder-list:nth-child(even)::before {
+    background-color: #343839;
 }
+.gridder-list.selectedItem:before {
+    background-color: #261f1f !important;
+}
+.gridder-show h2  {
+  font-size: 20px;
+  color: #16a148;
+  font-family: 'Gotham Rounded Book';
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 45px;
+}
+.gridder-show h2:after{
+    content: '';
+    width: 25px;
+    height: 4px;
+    background-color: #46b56e;
+    position: absolute;
+    border-radius: 3px;
+    left: 0px;
+    top: 13px;
+}
+.gridder-show ul li {
+    margin-bottom: 10px;
+        list-style: disc;
+    margin-left: 65px;
+}
+.gridder-navigation {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.gridder-close {
+    font-size: 0;
+    background: url(../images/cancel.png) no-repeat center left;
+    width: 26px;
+    height: 16px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px #aaa solid;    
+}
+.gridder-nav.prev {
+    font-size: 0;
+    background: url(../images/left.png) no-repeat center left;
+    width: 26px;
+    height: 16px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px #aaa solid;    
+}
+.gridder-nav.next {
+    font-size: 0;
+    background: url(../images/right.png) no-repeat center left;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    float: left;  
+}
+
+
 .our-services .col25 p {
  font-size: 14px;
  line-height: 24px;
@@ -1096,23 +1184,114 @@ dl dd img {
     width: 100%;
 }
 .newsblk h5 {
-        font-size: 13px;
+    font-size: 13px;
     margin-bottom: 4px;
     font-weight: 400;
     color: #666;
 }
 .newsblk h4 {
     font-size: 22px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-weight: 500;
     color: #333;
     position: relative;
 }
-.newsblk h4:before {
-    position: absolute;
+/*.newsblk h4:before {
     content: '';
-    width: 50px;
-    bottom: -15px;
-    height: 3px;
-    background-color: #16a147;
+    width: 100%;
+    height: 100%;
+    background-color: #343839;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+}*/
+
+
+.president-img {
+     padding: 40px 0 20px;
+     background-color: #f5f5f5;
+     margin-left: 50px;
+     margin-bottom: 30px;
+}
+.predimg {
+     width: 40%;
+     margin-left: -50px;
+     float: left;
+     margin-right: 50px;
+     margin-bottom: 50px;
+}
+.signature {
+     margin-top: 15px;
+     max-width: 100px;
+}
+.predimg .mess-img {
+     width:100%;
+     -webkit-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.23);
+     -moz-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.23);
+     box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.23);
+}
+.preddtl {
+     padding-right: 20px;
+     font-size: 18px;
+     line-height: 34px;
+     font-family: 'Roboto Slab', serif;
+}
+.preddtl h2 {
+    font-family: 'Gotham Rounded';
+     font-weight: 500;
+     font-size:25px;
+     color:#000;
+     margin-bottom:0px;
+     margin-top: 35px;
+     text-align: left;
+     padding:0;
+}
+.preddtl h6 {
+        font-family: 'Gotham Rounded';
+     font-size:16px;
+     color:#666;
+     margin-bottom:0px;
+     text-align: left;
+}
+
+.team-img {
+    width: 35%;
+    display:table-cell;
+    vertical-align: top;
+    padding-right: 40px;
+}
+.team-img img {
+    width: 100%;
+    border: 3px #16a148 solid;
+    padding: 5px;
+}
+.team-dtl {
+     width: 65%;
+    display:table-cell;
+    vertical-align: top;
+}
+.team-list li {
+    display: table;
+    border-bottom: 1px #ddd solid;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.team-img  h5 {
+    font-family: 'Gotham Rounded';
+     font-weight: 500;
+     font-size:20px;
+     color:#000;
+     margin-bottom:0px;
+     margin-top: 25px;
+     text-align: left;
+     padding:0;
+     display: block;
+}
+.team-img  h6 {
+        font-family: 'Gotham Rounded';
+     font-size:15px;
+     color:#666;
+     margin-bottom:0px;
+     text-align: left;
 }
