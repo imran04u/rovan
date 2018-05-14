@@ -23,7 +23,7 @@
         <div class="logo"> 
          <a href="index.html"><img src="images/logo.jpg" class="img-fluid"></a> </div>
          
-        <nav id="menu">
+         <nav id="menu">
           <div class="menu-sec">
            <ul class="top-menu">
             <li  class="active"><a href="index.html">Home</a></li>
@@ -43,20 +43,59 @@
     </div>
   </header>
   <div class="banner-section">
-  <div class="inner-ban about-ban">
-  <img src="images/innerban-client.jpg" class="img-fluid" />
-  <h3>Careers</h3>
+    <div class="inner-ban about-ban">
+      <img src="images/innerban-client.jpg" class="img-fluid" />
+      <h3>Careers</h3>
+    </div>
+  </div>
+  <div class="inner-content clearfix">
+    <div class="container">
+     <div id="careerBlk">
+      <ul>
+        <li class="r-tabs-state-active"><a href="#tab-1">
+         Help-Desk Support
+       </a></li>
+       <li><a href="#tab-2"> 
+         Executive Secretary
+       </a></li>
+     </ul>
+     <div id="tab-1"> 
+      <h6>Job Code: <span>Sec001</span></h6>
+      <h6>Job Title: <span>Help-Desk Support</span></h6>
+      <h6>Job Posted: <span>8/21/2018</span></h6>
+      <h6>Job Status: <span>Open</span></h6>
+      <h6>Job Description:</h6>
+      <p>Takamul Project Management Company (Takamul) is a specialized, integrated project management firm dedicated to promoting the project management practice in the Kingdom of Saudi Arabia.</p>
+      <h6>Responsibilities:</h6>
+      <p> 1. Takamul Project Management Company (Takamul) is a specialized, integrated project management firm dedicated to promoting the project management practice in the Kingdom of Saudi Arabia. <br>
+        2.Takamul Project Management Company (Takamul) is a specialized, integrated project management firm dedicated to promoting the project management practice in the Kingdom of Saudi Arabia.<br>
+      3. Takamul Project Management Company (Takamul) is a specialized, integrated project management firm dedicated to promoting the project management practice in the Kingdom of Saudi Arabia.</p>
+      <h6> Skills Required:</h6>
+      <p>Takamul Project Management Company (Takamul) is a specialized, integrated project management firm dedicated to promoting the project management practice in the Kingdom of Saudi Arabia.</p>
+      <h6>Please, send your CV to <a href="mailto:recruitment@takamul.com">recruitment@takamul.com</a></h6>
+    </div>
+    <div id="tab-2"> 
+     <h6>Job Code: <span>Sec001</span></h6>
+     <h6>Job Title: <span>Help-Desk Support</span></h6>
+     <h6>Job Posted: <span>8/21/2018</span></h6>
+     <h6>Job Status: <span>Open</span></h6>
+      <h6>Job Description:</h6>
+      <p>Takamul Project Management Company (Takamul) is a specialized, integrated project management firm dedicated to promoting the project management practice in the Kingdom of Saudi Arabia.</p>
+      <h6>Responsibilities:</h6>
+      <p> 1. Takamul Project Management Company (Takamul) is a specialized, integrated project management firm dedicated to promoting the project management practice in the Kingdom of Saudi Arabia. <br>
+        2.Takamul Project Management Company (Takamul) is a specialized, integrated project management firm dedicated to promoting the project management practice in the Kingdom of Saudi Arabia.<br>
+      3. Takamul Project Management Company (Takamul) is a specialized, integrated project management firm dedicated to promoting the project management practice in the Kingdom of Saudi Arabia.</p>
+      <h6> Skills Required:</h6>
+      <p>Takamul Project Management Company (Takamul) is a specialized, integrated project management firm dedicated to promoting the project management practice in the Kingdom of Saudi Arabia.</p>
+      <h6>Please, send your CV to <a href="mailto:recruitment@takamul.com">recruitment@takamul.com</a></h6>
   </div>
 </div>
-<div class="inner-content clearfix">
-<div class="container">
-<p>Contents will be updated soon</p>
 
 </div>
 </div>
 
-   <!--Footer-->
-      <div class="footer-section clearfix">
+<!--Footer-->
+<div class="footer-section clearfix">
   <div class="container">
     <div class=" footer-nav">
       <a href="">Contact Us</a>
@@ -76,7 +115,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 <script src="js/bootstrap.js"></script> 
 <script src="js/common.js"></script> 
-<script type="text/javascript" src="js/home.js"></script>
 <script type="text/javascript" src="js/plugins.js"></script> 
+<script src="js/jquery.responsiveTabs.min.js"></script>
+<script>
+  $('#careerBlk').responsiveTabs({
+    startCollapsed: 'accordion'
+  });
+</script>
 </body>
 </html>
