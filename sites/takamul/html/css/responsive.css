@@ -111,7 +111,9 @@ header nav ul>li:last-child {
         font-size: 12px;
         line-height: 12px;
     }
-
+header nav ul>li>ul {
+    display: none;
+}
 
 }
 

@@ -769,9 +769,6 @@ ul.icon-set li i.soc-yout {
 /*our-values*/
 .our-values{
     clear: both;
-    border: 5px solid #16a148;
-    padding: 30px 30px 30px 90px;
-    margin-top: 30px;
     display: inline-block;
     position:relative;
 }
