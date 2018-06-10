@@ -1376,5 +1376,55 @@ dl dd img {
 #careerBlk .r-tabs-panel h6 span {
     font-size: 15px;
     color: #000;
-    
+}
+.btn-apply {
+   background: #17a14a;
+    padding: 6px 20px;
+    border-radius: 25px;
+    color: #fff;
+    margin-top: 10px;
+    display: inline-block;
+}
+.career-form input, .career-form  textarea, .career-form  select {
+    border: 1px solid #dbdbdb;
+    height: 50px;
+    padding: 0px 17px;
+    width: 100%;
+    border-radius:25px;
+    font-size: 16px;
+    color: #555555;
+    outline: 0;
+    font-family: 'Gotham Rounded Book';
+}
+.career-form  input[type="file"] {
+        padding: 9px 20px;
+}
+.career-form select::-ms-expand {
+    display: none;
+}
+ .career-form  select {
+    background: url(../images/icons/down-arrow.png) no-repeat center right;
+     -webkit-appearance: none;
+    -moz-appearance: none;
+}
+button.submit {
+    width: 100%;
+    background-color: #db342d;
+    height: 50px;
+    border-radius:25px;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+button.submit:hover{
+    -webkit-box-shadow: 0px 6px 20px 3px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 6px 20px 3px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 6px 20px 3px rgba(0, 0, 0, 0.14);
+    -webkit-transition-duration: 0.4s;
+}
+.career-form  textarea {
+    resize: none;
+    height: 150px;
+    padding: 10px;
 }
