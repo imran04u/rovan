@@ -663,6 +663,9 @@ ul.icon-set li i.soc-yout {
     text-align: center;
     opacity: 0.7;
 }
+.blktxt h3 {
+    color: #000;
+}
 .inner-content{
     padding: 30px 0px;
 }
@@ -1427,4 +1430,13 @@ button.submit:hover{
     resize: none;
     height: 150px;
     padding: 10px;
+}
+.awards li {
+    float: left;
+    width: 22%;
+    margin-right: 3%;
+    border:2px #ddd solid;
+}
+.awards li img {
+    width:100%;
 }
