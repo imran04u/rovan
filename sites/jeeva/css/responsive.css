@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------------------------ 
+Project Name : Jeeva 
+Description : Main Style Sheet 
+Author : Imran Rovan 
+Created On : 07 July 2018 
+--------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) {
+	#burgernav {
+		display: none;
+	}
+	header #menu {
+		float: right;
+		margin-top: 20px;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+	header nav#menu ul li {
+		display:block;
+		float: left;
+		margin-left: 20px;
+	}
+	header nav#menu ul li a {
+		color: #fff;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	header nav#menu ul li a  i{
+		color: #fff;
+		font-size: 14px;
+		margin-left: 5px;
+	}
+}
