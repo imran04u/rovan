@@ -502,7 +502,7 @@ h3.theme-title:after {
 /*Footer section*/
 .footer-section {
     background: rgb(53, 56, 57);
-    padding:20px 0px;
+    padding:10px 0px;
     margin-top: 60px;
 }
 .footer-bottom {
@@ -588,7 +588,7 @@ h3.theme-title:after {
     font-size: 14px;
     font-weight: 400;
     text-align: right;
-    margin-top: 20px;
+    margin-top: 10px;
     font-family: 'Gotham Rounded Book';
 }
 .social-sec {
