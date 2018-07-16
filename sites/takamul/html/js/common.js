@@ -19,12 +19,7 @@ if($(window).width() <= 1024){
 		 "position": "right"
 	   }
 	 });  
-	}
-
-
-
- 
-	
+	}	
 });
 
 

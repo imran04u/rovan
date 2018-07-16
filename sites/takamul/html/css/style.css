@@ -168,6 +168,7 @@ header.header-fixed {
 }
 header.header-fixed .logo img { 
     height: 65px;
+    margin-top: 0;
 }
 .banner-section {
    overflow: hidden;
@@ -1017,6 +1018,7 @@ button.submit:hover{
     position: absolute;
     top: 20px;
     right: 10px;
+    z-index: 999;
 }
 .gridder-close {
     font-size: 0;
