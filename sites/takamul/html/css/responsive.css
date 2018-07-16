@@ -414,6 +414,9 @@
         .client-list li:nth-child(even) {
             border-right: 0px;
         }
+        .team-img h6 {
+            margin-bottom: 15px;
+        }
     }
 
     /*Responsive 360*/ 
@@ -480,6 +483,22 @@
         }
         .inner-ban img {
             height: 150px;
+        }
+        .inner-content p {
+            font-size: 15px;
+            line-height: 24px;
+        }
+        .cntct-right .nav li a {
+            padding: 0px 25px;
+        }
+        .client-list li {
+            width: 100%;
+            float: none;
+            border-right: 0;
+            border-bottom: 1px #eee solid;
+        }
+        .awards li {
+            width: 47%;
         }
     }
 
