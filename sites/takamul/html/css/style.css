@@ -1090,10 +1090,11 @@ h3.theme-title:after {
     .projlist h2 {
         background-color: rgba(0,0,0,.1);
         padding:10px 20px;
-        font-size: 18px;
+        font-size: 17px;
         text-align: center;
         color: #000;
         text-decoration: none;
+        text-transform: uppercase; 
     }
     .projlist a {
         text-decoration: none;
